@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+.headerBar {
+    box-shadow:
+        rgba(50, 50, 93, 0.082) 0px 10px 60px -12px inset,
+        rgba(0, 0, 0, 0.144) 0px 18px 36px -18px inset;
+}
+
+@media screen and (min-width: 1680px) {
+    * {
+        font-size: 14.5px;
+    }
+}
