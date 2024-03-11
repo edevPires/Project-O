@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="input.css" />
         <title>Project-O</title>
     </head>
-    <body class="flex justify-center">
+    <body class="flex justify-center overflow-y-auto">
         <header
             class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-sm"
         >
@@ -17,12 +17,12 @@
                 <div class="logo flex h-full items-center justify-center">
                     <img
                         src="/src/static/img/logo/logo_small.PNG"
-                        class="h-[6rem] w-auto"
-                    ></img>
+                        class="h-[5rem] w-auto"
+                    />
                 </div>
                 <div class="hidden h-full items-center justify-center md:flex">
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -36,12 +36,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Home</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -55,12 +55,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Para você</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -74,12 +74,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Buscar</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Favoritos</span
                         >
                     </div>
@@ -130,13 +130,13 @@
                 </div>
             </nav>
             <div
-                class="headerBar fixed z-10 h-header w-screen max-w-[1920px] bg-gray-100 md:hidden"
+                class="headerBar fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
             >
                 <div
                     class="flex h-full w-full items-center justify-evenly md:flex"
                 >
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -150,12 +150,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Home</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -169,12 +169,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Para você</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -188,12 +188,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Buscar</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +207,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Favoritos</span
                         >
                     </div>
@@ -229,807 +229,846 @@
                 </div>
             </div>
         </header>
-        <main class="w-full max-w-[1920px] px-10 pt-headerSize">
-            <!-- CARD ROW VEIAS-->
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
-            >
-                <!-- card input veias -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 transition-all hover:cursor-pointer"
-                />
-                <!-- card header veias -->
-                <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2.2rem] font-medium transition-all group-hover:bg-slate-100 peer-checked:border-0"
-                >
-                    Veias
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
-                    >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
+        <main class="w-full max-w-[1920px] px-10 pt-headerSize lg:px-0">
+            <div class="w-full lg:px-[14rem]">
+                <div class="mt-4">
+                    <em class="text-[4.5rem] font-light text-blue-950">
+                        Módulo
+                        <em
+                            class="inline text-[4.5rem] font-normal text-red-500"
+                            >Anato</em
+                        >
+                    </em>
                 </div>
-                <!-- card body veias -->
+                <!-- CARD ROW VEIAS-->
                 <div
-                    class="max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-500"
                 >
-                    <div class="flex flex-wrap justify-start transition-all">
-                        <!-- card buttons veias -->
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veia Cava Superior"
+                    <!-- card header veias -->
+                    <div
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 bg-transparent px-8 text-[2.2rem] font-medium transition-all"
+                    >
+                        Veias
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2rem] transform transition-all duration-300"
                         >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veia Cava Superior
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veias Jugulares"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veias Jugulares
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veias Pulmonares"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veias Pulmonares
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veia Cava Inferior"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veia Cava Inferior
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veias do Abdome"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veias do Abdome
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veias do Membro Superior"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veias do Membro Superior
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veias do Membro Inferior"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veias do Membro Inferior
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="./static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Veias"
-                            data-nome="Veias do Pé"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
-                                >
-                                    Veias do Pé
-                                </span>
-                            </div>
-                        </a>
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
                     </div>
-                </div>
-            </div>
-            <!-- CARD ROW OSSOS -->
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
-            >
-                <!-- card input ossos -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0"
-                />
-                <!-- card header ossos -->
-                <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100 peer-checked:border-0"
-                >
-                    Ossos
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
+                    <!-- card body veias -->
+                    <div
+                        class="cardBody max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all duration-500"
                     >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
-                </div>
-                <!-- card body ossos -->
-                <div
-                    class="peer-checked: h-full max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
-                >
-                    <div class="flex flex-wrap">
-                        <!-- card button ossos -->
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Crânio"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Crânio
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Coluna Vertebral"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Coluna Vertebral
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Costela e Esterno"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Costela e Esterno
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Ossos do Braço"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Ossos do Braço
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Ossos do Antebraço e Mão"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Ossos do Antebraço e Mão
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Ossos da Perna"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Ossos da Perna
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Cintura Escapular e Pelve"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Cintura Escapular e Pelve
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Ossos"
-                            data-nome="Ouvido"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[16rem] max-w-[16rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
-                                >
-                                    Ouvido
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- CARD ROW MÚSCULOS -->
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
-            >
-                <!-- card input músculos -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 hover:cursor-pointer"
-                />
-                <!-- card header músculos -->
-                <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100 peer-checked:border-0"
-                >
-                    Músculos
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
-                    >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
-                </div>
-                <!-- card body músculos -->
-                <div
-                    class="peer-checked: h-full max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
-                >
-                    <div class="flex flex-wrap">
-                        <!-- card buttons músculos -->
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Face"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músuclos da Face
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Mastigação"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos da Mastigação
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Língua"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos da Língua
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Pescoço"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Pescoço
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Peito (Peitoral)"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Peito (Peitoral)
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Abdôme"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Abdôme
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Costelas (Dorsais)"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos das Costelas (Dorsais)
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Assoalho Pélvico"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Assoalho Pélvico
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Ombro"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Ombro
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Escápula"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos da Escápula
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Braço"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Braço
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Antebraço"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Antebraço
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Mão"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos da Mão
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Coxa"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos da Coxa
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos da Perna"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos da Perna
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos Respiratórios"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos Respiratórios
-                                </span>
-                            </div>
-                        </a>
-                        <a
-                            href="/src/static/pages/templates/main.html"
-                            class="cardBtn"
-                            data-tipo="Músculos"
-                            data-nome="Músculos do Períneo"
-                        >
-                            <div
-                                class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200"
-                            >
-                                <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
-                                >
-                                    Músculos do Períneo
-                                </span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- CARD ROWS ARTICULAÇÕES -->
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
-            >
-                <!-- card input articulações -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 hover:cursor-pointer"
-                />
-                <!-- card header articulações -->
-                <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100 peer-checked:border-0"
-                >
-                    Articulações
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
-                    >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
-                </div>
-                <!-- card body articulações -->
-                <div
-                    class="peer-checked: h-full max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
-                >
-                    <div class="flex flex-wrap">
-                        <!-- card buttons articulações -->
                         <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200"
+                            class="flex flex-wrap justify-start transition-all"
                         >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                            <!-- card buttons veias -->
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veia Cava Superior"
                             >
-                                Articulções do Quadril
-                            </span>
-                        </div>
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200"
-                        >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veia Cava Superior
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veias Jugulares"
                             >
-                                Articulções do Joelho
-                            </span>
-                        </div>
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200"
-                        >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veias Jugulares
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veias Pulmonares"
                             >
-                                Articulções do Ombro
-                            </span>
-                        </div>
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200"
-                        >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veias Pulmonares
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veia Cava Inferior"
                             >
-                                Articulções do Cotovelo
-                            </span>
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veia Cava Inferior
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veias do Abdome"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veias do Abdome
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veias do Membro Superior"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veias do Membro Superior
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veias do Membro Inferior"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veias do Membro Inferior
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="./static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Veias"
+                                data-nome="Veias do Pé"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                    >
+                                        Veias do Pé
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- CARD ROW SISTEMA NERVOSO -->
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
-            >
-                <!-- card input sistema nervoso -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 hover:cursor-pointer"
-                />
-                <!-- card header sistema nervoso -->
+                <!-- CARD ROW OSSOS -->
                 <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100 peer-checked:border-0"
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-500"
                 >
-                    Sistema Nervoso
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
+                    <!-- card header ossos -->
+                    <div
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
-                </div>
-                <!-- card body sistema nervoso -->
-                <div
-                    class="peer-checked: h-full max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
-                >
-                    <div class="flex flex-wrap">
-                        <!-- card buttons sistema nervoso -->
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-200"
+                        Ossos
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2rem] transform transition-all duration-200"
                         >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-emerald-700"
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
+                    </div>
+                    <!-- card body ossos -->
+                    <div
+                        class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
+                    >
+                        <div class="flex flex-wrap">
+                            <!-- card button ossos -->
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Crânio"
                             >
-                                Nervos Cranianos
-                            </span>
-                        </div>
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-200"
-                        >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-emerald-700"
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Crânio
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Coluna Vertebral"
                             >
-                                Nervos Espinhais
-                            </span>
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Coluna Vertebral
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Costela e Esterno"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Costela e Esterno
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Ossos do Braço"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Ossos do Braço
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Ossos do Antebraço e Mão"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Ossos do Antebraço e Mão
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Ossos da Perna"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Ossos da Perna
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Cintura Escapular e Pelve"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Cintura Escapular e Pelve
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Ossos"
+                                data-nome="Ouvido"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                    >
+                                        Ouvido
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- CARD ROW SISTEMA RESPIRATÓRIO -->
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
-            >
-                <!-- card input sistema respiratório -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 hover:cursor-pointer"
-                />
-                <!-- card header sistema respiratório -->
+                <!-- CARD ROW MÚSCULOS -->
                 <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100 peer-checked:border-0"
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-1000"
                 >
-                    Sistema Respiratório
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
+                    <!-- card header músculos -->
+                    <div
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
-                </div>
-                <!-- card body sistema respiratório -->
-                <div
-                    class="peer-checked: h-full max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
-                >
-                    <div class="flex flex-wrap">
-                        <!-- card buttons sistema respiratório -->
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200"
+                        Músculos
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2rem] transform transition-all duration-200"
                         >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-blue-700"
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
+                    </div>
+                    <!-- card body músculos -->
+                    <div
+                        class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
+                    >
+                        <div class="flex flex-wrap">
+                            <!-- card buttons músculos -->
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Face"
                             >
-                                Traquéia
-                            </span>
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músuclos da Face
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Mastigação"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos da Mastigação
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Língua"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos da Língua
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Pescoço"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Pescoço
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Peito (Peitoral)"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Peito (Peitoral)
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Abdôme"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Abdôme
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Costelas (Dorsais)"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos das Costelas (Dorsais)
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Assoalho Pélvico"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Assoalho Pélvico
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Ombro"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Ombro
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Escápula"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos da Escápula
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Braço"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Braço
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Antebraço"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Antebraço
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Mão"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos da Mão
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Coxa"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos da Coxa
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos da Perna"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos da Perna
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos Respiratórios"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos Respiratórios
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Músculos"
+                                data-nome="Músculos do Períneo"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                    >
+                                        Músculos do Períneo
+                                    </span>
+                                </div>
+                            </a>
                         </div>
-                        <div
-                            class="group m-8 my-8 flex h-[12rem] min-w-[17rem] max-w-[17rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200"
+                    </div>
+                </div>
+                <!-- CARD ROWS ARTICULAÇÕES -->
+                <div
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-1000"
+                >
+                    <!-- card header articulações -->
+                    <div
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                    >
+                        Articulações
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2rem] transform transition-all duration-200"
                         >
-                            <span
-                                class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-blue-700"
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
+                    </div>
+                    <!-- card body articulações -->
+                    <div
+                        class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
+                    >
+                        <div class="flex flex-wrap">
+                            <!-- card buttons articulações -->
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Articulações"
+                                data-nome="Articulação do Quadril"
                             >
-                                Bronquios e Bronquíolos
-                            </span>
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                    >
+                                        Articulções do Quadril
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Articulações"
+                                data-nome="Articulação do Joelho"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                    >
+                                        Articulções do Joelho
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Articulações"
+                                data-nome="Articulação do Ombro"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                    >
+                                        Articulções do Ombro
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Articulações"
+                                data-nome="Articulação do Cotovelo"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                    >
+                                        Articulções do Cotovelo
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ROW SISTEMA NERVOSO -->
+                <div
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-1000"
+                >
+                    <!-- card header sistema nervoso -->
+                    <div
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                    >
+                        Sistema Nervoso
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2rem] transform transition-all duration-200"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
+                    </div>
+                    <!-- card body sistema nervoso -->
+                    <div
+                        class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
+                    >
+                        <div class="flex flex-wrap">
+                            <!-- card buttons sistema nervoso -->
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Nervos Cranianos"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Nervos Cranianos
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Nervos Espinhais"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Nervos Espinhais
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ROW SISTEMA RESPIRATÓRIO -->
+                <div
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-1000"
+                >
+                    <!-- card header sistema respiratório -->
+                    <div
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                    >
+                        Sistema Respiratório
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2rem] transform transition-all duration-200"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
+                    </div>
+                    <!-- card body sistema respiratório -->
+                    <div
+                        class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
+                    >
+                        <div class="flex flex-wrap">
+                            <!-- card buttons sistema respiratório -->
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Traquéia"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-blue-700"
+                                    >
+                                        Traquéia
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Nervos Cranianos"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-blue-700"
+                                    >
+                                        Bronquios e Bronquíolos
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1038,5 +1077,6 @@
         <script src="./static/js/utils/headerBar.js"></script>
         <script src="./static/js/modules/veias.js"></script>
         <script src="./static/js/components/moduleLoader.js"></script>
+        <script src="./static/js/utils/accordion.js"></script>
     </body>
 </html>

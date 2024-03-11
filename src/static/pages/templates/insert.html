@@ -230,18 +230,20 @@
                 </div>
             </div>
         </header>
-        <main class="w-full max-w-[1920px] overflow-hidden px-10 pt-headerSize">
+        <main
+            class="flex w-full max-w-[1920px] flex-wrap overflow-hidden px-10 pt-headerSize"
+        >
+            <div class="w-full">
+                <em class="text-[4.5rem] font-light text-red-500">
+                    Módulo Anato
+                </em>
+            </div>
             <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
+                class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-300"
             >
-                <!-- card input veias -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 transition-all"
-                />
-                <!-- card header veias -->
+                <!-- card header sistema respiratório -->
                 <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2rem] font-medium transition-all group-hover:bg-slate-100 peer-checked:border-0"
+                    class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                 >
                     ${listItem}
                     <svg
@@ -255,9 +257,9 @@
                         />
                     </svg>
                 </div>
-                <!-- card body veias -->
+                <!-- card body sistema respiratório -->
                 <div
-                    class="max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
+                    class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
                 >
                     <div class="flex flex-wrap justify-between transition-all">
                         <!-- card buttons veias -->
@@ -298,41 +300,10 @@
                 </div>
             </div>
         </main>
-        <div
-            class="slider fixed -right-full right-full top-0 z-30 h-screen w-screen translate-x-full bg-slate-100 transition-all duration-700 ease-in-out"
-        >
-            <div class="relative h-full w-full overflow-hidden">
-                <iframe
-                    src="/src/static/pages/templates/layout/style.html"
-                    frameborder="0"
-                    class="relative h-full w-full"
-                ></iframe>
 
-                <div
-                    class="absolute -left-[3rem] top-0 z-40 h-screen w-[3rem] bg-red-200"
-                >
-                    <div class="relative size-full">
-                        <div
-                            class="sliderClose w[3.5rem] absolute left-full top-1/2 flex h-[5rem] -translate-y-1/2 items-center justify-center rounded-br-2xl rounded-tr-2xl bg-blue-700 text-[2rem] shadow-lg transition-all hover:w-[4rem] hover:cursor-pointer md:w-[2.5rem]"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 320 512"
-                                class="h-[2rem]"
-                            >
-                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    fill="rgb(255,255,255)"
-                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
-                                />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <script src="/src/static/js/utils/headerBar.js"></script>
         <script src="/src/static/js/modules/veias.js"></script>
         <script src="/src/static/js/components/slider.js"></script>
+        <script src="/src/static/js/utils/accordion.js"></script>
     </body>
 </html>

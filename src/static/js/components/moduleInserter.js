@@ -1,20 +1,40 @@
 const selectedListString = localStorage.getItem('selectedList')
 const selectedList = JSON.parse(selectedListString)
 
+const selectedNameString = localStorage.getItem('nome')
+const selectedName = JSON.parse(selectedNameString)
+
+const selectedTypeString = localStorage.getItem('tipo')
+const selectedType = JSON.parse(selectedTypeString)
+
+const textColorPicker = () => {
+    if (selectedType === 'Veias') {
+        return '-red'
+    } else if (selectedType === 'Ossos') {
+        return '-gray'
+    }
+}
+
+var textColor = textColorPicker()
+
+const moduleTitle = `
+    <div class="w-full">
+        <em class="text-[3.2rem] font-semibold text${textColor}-500">
+            ${selectedName}
+        </em>
+    </div>
+`
 const mainRow = document.querySelector('.cardRow')
+mainRow.insertAdjacentHTML('beforeend', moduleTitle)
 
 selectedList.forEach((listItem) => {
-    const html = `<div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-gray-200 shadow-sm"
+    const rows = `
+            <div
+                class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-300"
             >
-                <!-- card input veias -->
-                <input
-                    type="checkbox"
-                    class="group peer absolute left-0 z-20 h-cardHeader w-full opacity-0 transition-all hover:cursor-pointer"
-                />
-                <!-- card header veias -->
+                <!-- card header sistema respiratório -->
                 <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-gray-200 px-8 text-[2rem] font-medium transition-all group-hover:bg-slate-100 peer-checked:border-0"
+                    class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                 >
                     ${listItem}
                     <svg
@@ -28,40 +48,40 @@ selectedList.forEach((listItem) => {
                         />
                     </svg>
                 </div>
-                <!-- card body veias -->
+                <!-- card body sistema respiratório -->
                 <div
-                    class="max-h-0 w-full flex-grow overflow-hidden transition-all peer-checked:max-h-fit"
+                    class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
                 >
                     <div class="flex flex-wrap justify-between transition-all">
                         <!-- card buttons veias -->
-                        <a class="min-w-full md:min-w-[16rem] md:flex-grow">
+                        <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="slide group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-0 hover:bg-blue-700 hover:shadow-lg"
+                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md hover:shadow${textColor}-200"
                             >
                                 <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-white"
+                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500"
                                 >
                                     Slider
                                 </span>
                             </div>
                         </a>
-                        <a class="min-w-full md:min-w-[16rem] md:flex-grow">
+                        <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-0 hover:bg-blue-700 hover:shadow-lg"
+                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md hover:shadow${textColor}-200"
                             >
                                 <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-white"
+                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500"
                                 >
                                     Botão
                                 </span>
                             </div>
                         </a>
-                        <a class="min-w-full md:min-w-[16rem] md:flex-grow">
+                        <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-0 hover:bg-blue-700 hover:shadow-lg"
+                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md hover:shadow${textColor}-200"
                             >
                                 <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-white"
+                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500"
                                 >
                                     Botão
                                 </span>
@@ -71,5 +91,5 @@ selectedList.forEach((listItem) => {
                 </div>
             </div>
     `
-    mainRow.insertAdjacentHTML('beforeend', html)
+    mainRow.insertAdjacentHTML('beforeend', rows)
 })

@@ -1,15 +1,7 @@
-const collapsiveArrow = document.querySelectorAll('.cardRow')
-
-collapsiveArrow.forEach((collapsiveArrow) => {
-    const arrow = collapsiveArrow.querySelector('.cardHeader svg')
-    collapsiveArrow.addEventListener('click', () => {
-        arrow.classList.toggle('rotate-180')
-    })
-})
-
 const collapseTopBar = () => {
     const headerBar = document.querySelector('.headerBar')
-    headerBar.classList.toggle('top-headerSize')
+    headerBar.classList.toggle('top-0')
+    headerBar.classList.toggle('top-[10rem]')
 }
 
 const hambMenu = document.querySelector('.hambMenu')

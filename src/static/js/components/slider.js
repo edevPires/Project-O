@@ -1,7 +1,11 @@
 const sliderCollapse = () => {
-    slider.classList.toggle('-right-full')
+    slider.classList.toggle('duration-1000')
+    slider.classList.toggle('right-full')
+    slider.classList.toggle('right-0')
+    slider.classList.toggle('opacity-0')
     body.classList.toggle('overflow-visible')
     body.classList.toggle('overflow-hidden')
+    slider.classList.toggle('duration-1000')
 }
 const slideBtn = document.querySelectorAll('.slide')
 const slider = document.querySelector('.slider')
