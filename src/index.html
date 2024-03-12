@@ -4,7 +4,19 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/src/static/fonts/poppins/style.css" />
         <link rel="stylesheet" href="input.css" />
+        <link rel="stylesheet" href="/src/static/fonts/rubik/style.css" />
         <title>Project-O</title>
     </head>
     <body class="flex justify-center overflow-y-auto">
@@ -12,7 +24,7 @@
             class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-sm"
         >
             <nav
-                class="z-20 flex h-header w-screen max-w-[1920px] items-center justify-between border-gray-300 bg-white px-8"
+                class="poppins-regular z-20 flex h-header w-screen max-w-[1920px] items-center justify-between border-gray-300 bg-white px-8"
             >
                 <div class="logo flex h-full items-center justify-center">
                     <img
@@ -36,7 +48,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Home</span
                         >
                     </div>
@@ -55,7 +67,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Para você</span
                         >
                     </div>
@@ -74,7 +86,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Buscar</span
                         >
                     </div>
@@ -83,18 +95,18 @@
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
+                            viewBox="0 0 384 512"
                             class="h-[2.5rem]"
                         >
                             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                                 fill="rgb(30 58 138)"
-                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"
+                                d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Favoritos</span
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            >Salvos</span
                         >
                     </div>
                 </div>
@@ -130,7 +142,7 @@
                 </div>
             </nav>
             <div
-                class="headerBar fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
+                class="headerBar poppins-regular fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
             >
                 <div
                     class="flex h-full w-full items-center justify-evenly md:flex"
@@ -150,7 +162,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Home</span
                         >
                     </div>
@@ -169,7 +181,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Para você</span
                         >
                     </div>
@@ -188,7 +200,7 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Buscar</span
                         >
                     </div>
@@ -197,18 +209,18 @@
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
+                            viewBox="0 0 384 512"
                             class="h-[2.5rem]"
                         >
                             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                                 fill="rgb(30 58 138)"
-                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"
+                                d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] font-semibold text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Favoritos</span
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            >Salvos</span
                         >
                     </div>
                     <div
@@ -242,11 +254,11 @@
                 </div>
                 <!-- CARD ROW VEIAS-->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-500"
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-1000"
                 >
                     <!-- card header veias -->
                     <div
-                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 bg-transparent px-8 text-[2.2rem] font-medium transition-all"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 bg-transparent px-8 text-[2.2rem] font-medium transition-all"
                     >
                         Veias
                         <svg
@@ -278,7 +290,7 @@
                                     class="group m-8 my-8 flex h-[12rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veia Cava Superior
                                     </span>
@@ -294,7 +306,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veias Jugulares
                                     </span>
@@ -310,7 +322,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veias Pulmonares
                                     </span>
@@ -326,7 +338,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veia Cava Inferior
                                     </span>
@@ -342,7 +354,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veias do Abdome
                                     </span>
@@ -358,7 +370,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veias do Membro Superior
                                     </span>
@@ -374,7 +386,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veias do Membro Inferior
                                     </span>
@@ -390,7 +402,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-rose-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-rose-700"
                                     >
                                         Veias do Pé
                                     </span>
@@ -401,11 +413,11 @@
                 </div>
                 <!-- CARD ROW OSSOS -->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-500"
+                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-1000"
                 >
                     <!-- card header ossos -->
                     <div
-                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
                         Ossos
                         <svg
@@ -435,7 +447,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Crânio
                                     </span>
@@ -451,7 +463,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Coluna Vertebral
                                     </span>
@@ -467,7 +479,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Costela e Esterno
                                     </span>
@@ -483,7 +495,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Ossos do Braço
                                     </span>
@@ -499,7 +511,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Ossos do Antebraço e Mão
                                     </span>
@@ -515,7 +527,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Ossos da Perna
                                     </span>
@@ -531,7 +543,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Cintura Escapular e Pelve
                                     </span>
@@ -547,7 +559,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-gray-600 hover:bg-gray-50 hover:shadow-lg sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-gray-600"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-gray-600"
                                     >
                                         Ouvido
                                     </span>
@@ -562,7 +574,7 @@
                 >
                     <!-- card header músculos -->
                     <div
-                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
                         Músculos
                         <svg
@@ -592,7 +604,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músuclos da Face
                                     </span>
@@ -608,7 +620,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos da Mastigação
                                     </span>
@@ -624,7 +636,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos da Língua
                                     </span>
@@ -640,7 +652,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Pescoço
                                     </span>
@@ -656,7 +668,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Peito (Peitoral)
                                     </span>
@@ -672,7 +684,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Abdôme
                                     </span>
@@ -688,7 +700,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos das Costelas (Dorsais)
                                     </span>
@@ -704,7 +716,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Assoalho Pélvico
                                     </span>
@@ -720,7 +732,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Ombro
                                     </span>
@@ -736,7 +748,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos da Escápula
                                     </span>
@@ -752,7 +764,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Braço
                                     </span>
@@ -768,7 +780,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Antebraço
                                     </span>
@@ -784,7 +796,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos da Mão
                                     </span>
@@ -800,7 +812,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos da Coxa
                                     </span>
@@ -816,7 +828,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos da Perna
                                     </span>
@@ -832,7 +844,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos Respiratórios
                                     </span>
@@ -848,7 +860,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-red-950 hover:bg-gray-50 hover:shadow-lg hover:shadow-red-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-red-950"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-red-950"
                                     >
                                         Músculos do Períneo
                                     </span>
@@ -863,7 +875,7 @@
                 >
                     <!-- card header articulações -->
                     <div
-                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
                         Articulações
                         <svg
@@ -893,7 +905,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-pink-700"
                                     >
                                         Articulções do Quadril
                                     </span>
@@ -909,7 +921,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-pink-700"
                                     >
                                         Articulções do Joelho
                                     </span>
@@ -925,7 +937,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-pink-700"
                                     >
                                         Articulções do Ombro
                                     </span>
@@ -941,7 +953,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-pink-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-pink-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-pink-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-pink-700"
                                     >
                                         Articulções do Cotovelo
                                     </span>
@@ -956,7 +968,7 @@
                 >
                     <!-- card header sistema nervoso -->
                     <div
-                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
                         Sistema Nervoso
                         <svg
@@ -986,7 +998,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-emerald-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
                                     >
                                         Nervos Cranianos
                                     </span>
@@ -1002,7 +1014,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-emerald-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
                                     >
                                         Nervos Espinhais
                                     </span>
@@ -1017,7 +1029,7 @@
                 >
                     <!-- card header sistema respiratório -->
                     <div
-                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
                     >
                         Sistema Respiratório
                         <svg
@@ -1047,7 +1059,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-blue-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
                                     >
                                         Traquéia
                                     </span>
@@ -1063,7 +1075,7 @@
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
-                                        class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text-blue-700"
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
                                     >
                                         Bronquios e Bronquíolos
                                     </span>

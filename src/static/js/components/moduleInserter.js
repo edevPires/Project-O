@@ -34,7 +34,7 @@ selectedList.forEach((listItem) => {
             >
                 <!-- card header sistema respiratório -->
                 <div
-                    class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium group-hover:bg-slate-100"
+                    class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] group-hover:bg-slate-100 poppins-regular"
                 >
                     ${listItem}
                     <svg
@@ -56,10 +56,10 @@ selectedList.forEach((listItem) => {
                         <!-- card buttons veias -->
                         <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md hover:shadow${textColor}-200"
+                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md "
                             >
                                 <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500"
+                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500 poppins-regular"
                                 >
                                     Slider
                                 </span>
@@ -67,10 +67,10 @@ selectedList.forEach((listItem) => {
                         </a>
                         <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md hover:shadow${textColor}-200"
+                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md "
                             >
                                 <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500"
+                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500 poppins-regular"
                                 >
                                     Botão
                                 </span>
@@ -78,10 +78,10 @@ selectedList.forEach((listItem) => {
                         </a>
                         <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md hover:shadow${textColor}-200"
+                                class="slide justify-center group m-8 my-8 flex h-[10rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border${textColor}-500 hover:shadow-md "
                             >
                                 <span
-                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500"
+                                    class="flex items-center text-[1.5rem] font-bold duration-200 group-hover:text${textColor}-500 poppins-regular"
                                 >
                                     Botão
                                 </span>
