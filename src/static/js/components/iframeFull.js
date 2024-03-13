@@ -9,7 +9,6 @@ const loadFsBtns = () => {
         // evento de click nos botões
         fullscreen.addEventListener('click', () => {
             // select das divs pai de cada botão select (no caso são as telas)
-            alert('click')
             const screen = fullscreen.parentNode
 
             if (screen.classList.contains('relative')) {

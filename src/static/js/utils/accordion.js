@@ -12,13 +12,14 @@ const collpaseCard = (header) => {
             svg.classList.remove('rotate-180')
         }
     })
+    setTimeout(() => {
+        const clickedSvg = header.querySelector('svg')
+        clickedSvg.classList.add('rotate-180')
 
-    const clickedSvg = header.querySelector('svg')
-    clickedSvg.classList.add('rotate-180')
-
-    header.parentNode.classList.add('shadow-md')
-    header.nextElementSibling.classList.add('max-h-[999rem]')
-    header.nextElementSibling.classList.remove('max-h-0')
+        header.parentNode.classList.add('shadow-md')
+        header.nextElementSibling.classList.add('max-h-[999rem]')
+        header.nextElementSibling.classList.remove('max-h-0')
+    }, 300)
 }
 
 const cardBody = document.querySelectorAll('.cardBody')

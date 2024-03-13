@@ -62,6 +62,14 @@
                 </div>
             </div>
         </div>
-        <script src="/src/static/js/components/iframeFull.js"></script>
+        <script>
+            const fullscreenBtn = document.querySelectorAll('.fullscreen')
+
+            fullscreenBtn.forEach((element) => {
+                element.addEventListener('click', () => {
+                    const divPai = element.parentNode
+                })
+            })
+        </script>
     </body>
 </html>

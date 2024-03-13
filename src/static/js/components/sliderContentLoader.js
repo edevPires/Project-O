@@ -90,9 +90,9 @@ const iframeLoader = (dataName) => {
     if (selectedType === 'Ossos') {
         iframeLinks.forEach((element) => {
             if (element.nome === dataName) {
-                const telaCentral = element.telaCentral
-                const tela2 = element.tela2
-                const tela3 = element.tela3
+                telaCentral = element.telaCentral
+                tela2 = element.tela2
+                tela3 = element.tela3
                 console.log(dataName)
                 console.log(telaCentral)
                 console.log(tela2)
@@ -101,9 +101,20 @@ const iframeLoader = (dataName) => {
             }
         })
     } else {
-        alert('não ossos')
+        iframeLinks.forEach((element) => {
+            if (element.nome === dataName) {
+                telaCentral = element.telaCentral
+                console.log(dataName)
+                console.log(telaCentral)
+                sliderPicker(telaCentral, tela2, tela3)
+            }
+        })
     }
 }
+var telaCentral = ''
+var tela2 = ''
+var tela3 = ''
+
 var sliderContent = ``
 
 const clickedDiv = document.querySelectorAll('.slide')
