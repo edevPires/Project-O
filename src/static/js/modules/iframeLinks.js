@@ -6,11 +6,13 @@ const iframeLinks = [
     },
     {
         nome: 'Veia Ázigos',
-        telaCentral: '',
+        telaCentral:
+            'https://sketchfab.com/models/5344e6e8801a49429fdaeb342ce2e000/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0',
     },
     {
         nome: 'Veia Braquiocefálica Direita',
-        telaCentral: '',
+        telaCentral:
+            'https://sketchfab.com/models/b9f46a0f7b174283abc37649d12eaf60/embed?autostart=1&internal=1&tracking=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0',
     },
     {
         nome: 'Veia Jugular Interna Direita',
