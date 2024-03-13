@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="input.css" />
         <link rel="stylesheet" href="/src/static/fonts/rubik/style.css" />
     </head>
-    <body class="flex justify-center overflow-visible overflow-y-visible">
+    <body class="flex justify-center overflow-visible">
         <header
             class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-sm"
         >
@@ -244,20 +244,15 @@
                 </div>
             </div>
         </header>
-        <main class="w-full max-w-[1920px] px-10 pt-headerSize">
+        <main class="w-full max-w-[1920px] px-10 pt-headerSize sm:px-[14rem]">
             <div class="cardRow poppins-regular my-6 h-fit w-full"></div>
         </main>
         <div
             class="slider ease fixed -right-full top-0 z-30 h-screen w-screen translate-x-full bg-slate-100 opacity-0 transition-all"
             style="transition-duration: 2s; transition-delay: 0s"
         >
-            <div class="relative h-full w-full overflow-hidden">
-                <iframe
-                    src="/src/static/pages/templates/layout/style.html"
-                    frameborder="0"
-                    class="relative h-full w-full"
-                ></iframe>
-
+            <div class="sliderContent relative h-full w-full overflow-hidden">
+                <!-- slider aq -->
                 <div
                     class="absolute -left-[3rem] top-0 z-40 h-screen w-[3rem] bg-red-200"
                 >
@@ -283,7 +278,10 @@
         </div>
         <script src="/src/static/js/utils/headerBar.js"></script>
         <script src="/src/static/js/components/moduleInserter.js"></script>
-        <script src="/src/static/js/components/slider.js"></script>
+        <script src="/src/static/js/components/iframeFull.js"></script>
+        <script src="/src/static/js/components/sliderContentLoader.js"></script>
         <script src="/src/static/js/utils/accordion.js"></script>
+        <script src="/src/static/js/modules/iframeLinks.js"></script>
+        <script src="/src/static/js/components/slider.js"></script>
     </body>
 </html>
