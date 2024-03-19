@@ -17,11 +17,16 @@
         <link rel="stylesheet" href="/src/static/fonts/poppins/style.css" />
         <link rel="stylesheet" href="input.css" />
         <link rel="stylesheet" href="/src/static/fonts/rubik/style.css" />
+        <style>
+            .noteCard:nth-child(even) {
+                border-color: rgb(239 68 68);
+            }
+        </style>
         <title>Salvos</title>
     </head>
-    <body class="overflow-hidden">
+    <body>
         <header
-            class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-sm"
+            class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-md"
         >
             <nav
                 class="poppins-regular z-20 flex h-header w-screen max-w-[1920px] items-center justify-between border-gray-300 bg-white px-8"
@@ -33,25 +38,27 @@
                     />
                 </div>
                 <div class="hidden h-full items-center justify-center md:flex">
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="/src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Home</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
                     <div
                         class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
@@ -90,25 +97,27 @@
                             >Buscar</span
                         >
                     </div>
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="/src/static/pages/templates/saved.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Favoritos</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Salvos</span
+                            >
+                        </div>
+                    </a>
                 </div>
                 <div
                     class="user hidden items-center justify-center rounded-full bg-blue-900 sm:flex md:h-[6rem] md:w-[6rem]"
@@ -147,25 +156,27 @@
                 <div
                     class="flex h-full w-full items-center justify-evenly md:flex"
                 >
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="/src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Home</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
                     <div
                         class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
@@ -204,25 +215,27 @@
                             >Buscar</span
                         >
                     </div>
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="/src/static/pages/templates/saved.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Favoritos</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Salvos</span
+                            >
+                        </div>
+                    </a>
                     <div
                         class="user flex h-[6rem] w-[6rem] items-center justify-center rounded-full bg-blue-900"
                     >
@@ -244,25 +257,69 @@
         <main class="w-full max-w-[1920px] px-10 pt-headerSize lg:px-0">
             <div>
                 <div class="w-full lg:px-[14rem]">
-                    <div class="mt-4">
-                        <em class="text-[4.5rem] font-light text-blue-950">
-                            Itens
-                            <em
-                                class="inline text-[4.5rem] font-normal text-red-500"
-                                >Salvos</em
+                    <div
+                        class="savedNotes flex max-h-[7.5rem] flex-wrap justify-center overflow-hidden transition-all duration-500"
+                    >
+                        <div
+                            class="savedNotesHeader my-2 flex h-[7rem] w-full items-center justify-between border-b hover:cursor-pointer"
+                        >
+                            <em class="text-[3.5rem] font-light text-blue-950">
+                                Notas
+                                <em
+                                    class="inline text-[3.5rem] font-normal text-red-500"
+                                    >Salvas</em
+                                >
+                            </em>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512"
+                                class="h-[2.5rem] transform fill-red-500 transition-all duration-300"
                             >
-                        </em>
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                                />
+                            </svg>
+                        </div>
+                        <!-- <div
+                            class="noteCard m-[2rem] h-fit max-h-fit w-full rounded-3xl border border-blue-900 p-[2rem] py-[3rem] transition-all duration-500 hover:scale-105 hover:cursor-pointer hover:shadow-lg lg:min-w-[25rem] lg:max-w-[25rem] lg:flex-grow"
+                        >
+                            <h4
+                                class="noteTitle poppins-regular mb-[1rem] text-[2.8rem] leading-10"
+                            >
+                                Título
+                            </h4>
+                            <p
+                                class="noteText line-clamp-[8] text-justify text-[1.5rem]"
+                            >
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Cupiditate architecto,
+                                delectus, recusandae asperiores sed expedita rem
+                                nisi labore iste, neque enim. Nemo dolor harum
+                                ratione cupiditate iste iure quia et corrupti
+                                aut velit, praesentium excepturi facere amet
+                                possimus sit earum similique nostrum dolore odit
+                                ullam in. Quisquam ex ab eos pariatur
+                                consectetur eum dolore quos, voluptatum, tenetur
+                                cum dolores minima animi assumenda facere
+                                molestiae inventore omnis praesentium voluptate
+                                officiis aspernatur excepturi ad, perferendis
+                                labore aliquid? Sed reprehenderit, vero aliquam
+                                rem expedita eligendi adipisci ad nobis vitae.
+                                Possimus ea aliquam voluptatem alias iste natus
+                                fugiat beatae, assumenda veniam non! Quasi, ex.
+                            </p>
+                        </div> -->
                     </div>
-                    <hr />
-                    <br />
-                    <div class="favorite-itens"></div>
                 </div>
             </div>
         </main>
-
+        <script src="/src/static/js/components/noteInserter.js"></script>
+        <script src="/src/static/js/utils/note.js"></script>
         <script src="/src/static/js/utils/headerBar.js"></script>
         <script src="/src/static/js/modules/veias.js"></script>
-        <script src="/src/static/js/components/slider.js"></script>
+        <script src="/src/static/js/components/moduleLoader.js"></script>
         <script src="/src/static/js/utils/accordion.js"></script>
+        <script src="/src/static/js/components/script.js"></script>
     </body>
 </html>

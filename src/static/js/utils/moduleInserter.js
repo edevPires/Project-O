@@ -1,39 +1,31 @@
-const selectedListString = localStorage.getItem('selectedList')
-const selectedList = JSON.parse(selectedListString)
-
-const selectedNameString = localStorage.getItem('nome')
-const selectedName = JSON.parse(selectedNameString)
-
-const selectedTypeString = localStorage.getItem('tipo')
-const selectedType = JSON.parse(selectedTypeString)
-
-const textColorPicker = () => {
-    if (selectedType === 'Veias') {
-        return '-red'
-    } else if (selectedType === 'Ossos') {
-        return '-gray'
+const moduleInserter = (list, name, type) => {
+    const textColorPicker = () => {
+        if (type === 'Veias') {
+            return '-red'
+        } else if (type === 'Ossos') {
+            return '-gray'
+        }
     }
-}
 
-var textColor = textColorPicker()
+    var textColor = textColorPicker()
 
-const moduleTitle = `
+    const moduleTitle = `
     <div class="w-full">
                 <em class="text-[3.5rem] font-light text-blue-950">
-                    ${selectedName}
+                    ${name}
                 </em>
             </div>
 `
-const mainRow = document.querySelector('.cardRow')
-mainRow.insertAdjacentHTML('beforeend', moduleTitle)
+    const mainRow = document.querySelector('.cardRow')
+    mainRow.insertAdjacentHTML('beforeend', moduleTitle)
 
-selectedList.forEach((listItem) => {
-    const rows = `<div
+    list.forEach((listItem) => {
+        const rows = `<div
                 class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-300"
             >
                 <!-- card header sistema respiratório -->
                 <div
-                    class="cardHeader poppins-regular relative line-clamp-1 flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[1.8rem]  group-hover:bg-slate-100 sm:text-[2rem]"
+                    class="cardHeader poppins-regular relative line-clamp-1 flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[1.8rem] text-slate-900 group-hover:bg-slate-100 sm:text-[2rem]"
                 >
                     ${listItem}
                     <svg
@@ -56,7 +48,7 @@ selectedList.forEach((listItem) => {
                         <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
                                 class="slide group m-8 my-8 flex h-[10rem] items-center justify-center rounded-2xl border-[1px] border-gray-400 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md"
-                                data-nome='${listItem}' 
+                                data-nome="${listItem}"
                             >
                                 <span
                                     class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
@@ -100,7 +92,7 @@ selectedList.forEach((listItem) => {
                         </a>
                         <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
                             <div
-                                class="group m-8 my-8 flex h-[10rem] items-center justify-center rounded-2xl border-[1px] border-gray-400 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md "
+                                class="group m-8 my-8 flex h-[10rem] items-center justify-center rounded-2xl border-[1px] border-gray-400 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md"
                             >
                                 <span
                                     class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
@@ -124,5 +116,6 @@ selectedList.forEach((listItem) => {
                 </div>
             </div>
     `
-    mainRow.insertAdjacentHTML('beforeend', rows)
-})
+        mainRow.insertAdjacentHTML('beforeend', rows)
+    })
+}
