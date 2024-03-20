@@ -258,10 +258,10 @@
             <div>
                 <div class="w-full lg:px-[14rem]">
                     <div
-                        class="savedNotes flex max-h-[7.5rem] flex-wrap justify-center overflow-hidden transition-all duration-500"
+                        class="flex flex-wrap justify-center transition-all duration-500"
                     >
                         <div
-                            class="savedNotesHeader my-2 flex h-[7rem] w-full items-center justify-between border-b hover:cursor-pointer"
+                            class="savedNotesHeader mb-[2rem] flex h-[7rem] w-full items-center justify-between border-b hover:cursor-pointer"
                         >
                             <em class="text-[3.5rem] font-light text-blue-950">
                                 Notas
@@ -281,45 +281,32 @@
                                 />
                             </svg>
                         </div>
-                        <!-- <div
-                            class="noteCard m-[2rem] h-fit max-h-fit w-full rounded-3xl border border-blue-900 p-[2rem] py-[3rem] transition-all duration-500 hover:scale-105 hover:cursor-pointer hover:shadow-lg lg:min-w-[25rem] lg:max-w-[25rem] lg:flex-grow"
-                        >
-                            <h4
-                                class="noteTitle poppins-regular mb-[1rem] text-[2.8rem] leading-10"
-                            >
-                                Título
-                            </h4>
-                            <p
-                                class="noteText line-clamp-[8] text-justify text-[1.5rem]"
-                            >
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Cupiditate architecto,
-                                delectus, recusandae asperiores sed expedita rem
-                                nisi labore iste, neque enim. Nemo dolor harum
-                                ratione cupiditate iste iure quia et corrupti
-                                aut velit, praesentium excepturi facere amet
-                                possimus sit earum similique nostrum dolore odit
-                                ullam in. Quisquam ex ab eos pariatur
-                                consectetur eum dolore quos, voluptatum, tenetur
-                                cum dolores minima animi assumenda facere
-                                molestiae inventore omnis praesentium voluptate
-                                officiis aspernatur excepturi ad, perferendis
-                                labore aliquid? Sed reprehenderit, vero aliquam
-                                rem expedita eligendi adipisci ad nobis vitae.
-                                Possimus ea aliquam voluptatem alias iste natus
-                                fugiat beatae, assumenda veniam non! Quasi, ex.
-                            </p>
-                        </div> -->
+                        <div
+                            class="savedNotes grid w-full grid-cols-1 gap-[2rem] overflow-visible sm:grid-cols-2 md:grid-cols-3"
+                        ></div>
                     </div>
                 </div>
             </div>
+            <!-- <div
+                class="focusBg absolute left-0 top-0 z-50 flex h-[100dvh] w-[100dvw] items-center justify-center bg-black opacity-10"
+            >
+            <div>
+
+            </div> -->
         </main>
-        <script src="/src/static/js/components/noteInserter.js"></script>
-        <script src="/src/static/js/utils/note.js"></script>
         <script src="/src/static/js/utils/headerBar.js"></script>
         <script src="/src/static/js/modules/veias.js"></script>
         <script src="/src/static/js/components/moduleLoader.js"></script>
         <script src="/src/static/js/utils/accordion.js"></script>
-        <script src="/src/static/js/components/script.js"></script>
+        <script src="/src/static/js/utils/noteInserter.js"></script>
+        <script src="/src/static/js/components/saved.js"></script>
+        <script>
+            const noteCards = document.querySelectorAll('.noteCard')
+            noteCards.forEach((element) => {
+                element.addEventListener('click', () => {
+                    alert('click')
+                })
+            })
+        </script>
     </body>
 </html>
