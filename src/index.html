@@ -1249,7 +1249,7 @@
             </div>
             <!-- note body -->
             <div
-                class="noteBody fixed -right-full bottom-[2rem] z-50 mt-[10rem] flex h-3/4 w-3/4 flex-col flex-wrap rounded-[2rem] border border-blue-900 bg-white pb-6 shadow-xl shadow-neutral-300 transition-all duration-500 sm:h-3/4 sm:w-full sm:max-w-[40rem]"
+                class="noteBody fixed -right-full bottom-[2rem] z-50 mt-[10rem] flex h-3/4 w-3/4 flex-col flex-wrap rounded-[2rem] border bg-white pb-6 shadow-xl shadow-neutral-300 transition-all duration-500 sm:h-3/4 sm:w-full sm:max-w-[40rem]"
             >
                 <div
                     class="poppins-regular flex w-full flex-grow-0 items-center justify-between rounded-3xl rounded-bl-none rounded-br-none border-b p-6 text-[2.2rem] text-blue-950"
@@ -1270,15 +1270,12 @@
                     class="relative flex flex-grow flex-col flex-wrap rounded-3xl rounded-tl-none rounded-tr-none"
                 >
                     <!-- note text title -->
-                    <textarea
-                        name="text-title"
+                    <input
+                        type="text"
+                        class="poppins-normal poppins-regular h-[5.2rem] w-full border-b px-6 py-4 text-start align-middle text-[2rem] outline-none"
                         id="text-title"
-                        cols="1"
-                        rows="1"
-                        maxlength="50"
                         placeholder="Título"
-                        class="poppins-normal poppins-regular h-[5.2rem] w-full resize-none border-b px-6 py-4 text-start align-middle text-[2rem] outline-none"
-                    ></textarea>
+                    />
                     <!-- note text body -->
                     <textarea
                         name="text-body"
