@@ -13,6 +13,8 @@ const fcsNtClose = document.querySelector('#fcsNtClose')
 // target do botão "editar"
 const fcsNtEdit = document.querySelector('#fcsNtEdit')
 
+const fcsNtDel = document.querySelector('#fcsNtDel')
+
 // armazena o valor do título da nota clicada antes de qualquer possível alteração
 var oldTitle = fcsNtTitle.value
 // armazena o valor do texto da nota clicada antes de qualquer possível alteração
@@ -56,6 +58,7 @@ const rewriteLsNt = () => {
         alert('Erro, operação bloqueada!')
     }
 }
+
 // função responsável por configurar o botão "editar"
 const editFcsNt = (btn) => {
     // if statment que possibilita a alteração da nota apenas se o o botão "editar" for clicado
@@ -130,10 +133,26 @@ const showHiddenNote = () => {
     fcsNt.classList.toggle('scale-100')
     fcsNt.classList.toggle('opacity-0')
 }
+
+const delFcsNt = () => {
+    const lsNotes = getNote()
+
+    // Filtrar a lista para excluir o elemento com o mesmo título que oldTitle
+    lsNotes.lista = lsNotes.lista.filter(
+        (element) => element.title !== oldTitle
+    )
+
+    // Atualizar as notas
+    console.log(lsNotes)
+    setNote(lsNotes)
+    showHiddenNote()
+    noteInserter()
+}
 // Função responsável por inserir os valores da NM clicada na NP
 const fcsNoteIsrt = (noteTitle, noteText) => {
     fcsNtTitle.value = noteTitle
     fcsNtText.value = noteText
+    oldTitle = noteTitle
 }
 // função principal das notas
 const noteEventHandler = () => {
@@ -165,6 +184,8 @@ const noteEventHandler = () => {
 }
 
 // secção dos Event listener constantes, que não sofrerão alterações ao decorrer do uso da página
+
+fcsNtDel.addEventListener('click', delFcsNt)
 
 // listener de click do botão "sair" (fecha a NP)
 fcsNtClose.addEventListener('click', showHiddenNote)
