@@ -33,12 +33,14 @@ const collapseNote = () => {
 
 // função chamada na criação de uma nova nota, recebendo um objeto contendo titulo e o texto da nota e "empurrando" esse objeto para uma lista no armazenamento local
 const pushNewNote = (object) => {
-    LSnote = getNote()
+    const LSnote = getNote()
 
     LSnote.lista.push(object)
 
     setNote(LSnote)
 }
+
+const popover = document.querySelector('.popover')
 
 // captura o botão de criar nova nota que ao clicar envia os parametros para a função que salvara o titulo e o texxto da nota no armazenamento local
 const saveBtn = document.querySelector('.saveBtn')
@@ -59,7 +61,13 @@ saveBtn.addEventListener('click', () => {
         }
 
         pushNewNote(newNote)
+
         collapseNote()
+
+        popover.classList.add('fade-in')
+        setInterval(() => {
+            popover.classList.remove('fade-in')
+        }, 4000)
     }
 })
 

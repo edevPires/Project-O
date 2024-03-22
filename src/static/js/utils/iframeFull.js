@@ -11,23 +11,37 @@ const loadFsBtns = () => {
             // select das divs pai de cada botão select (no caso são as telas)
             const screen = fullscreen.parentNode
 
-            if (screen.classList.contains('relative')) {
-                // caso a tela possua a classe "full" isso indica que a mesma ja se encontra no fullscreen então ocorre apenas a reversão
-                screen.classList.remove('relative')
-                screen.classList.add('fixed')
-                screen.classList.add('top-0')
-                screen.classList.add('left-0')
-                screen.classList.add('w-screen')
-                screen.classList.add('h-screen')
-                screen.classList.add('z-30')
-            } else {
-                screen.classList.add('relative')
-                screen.classList.remove('fixed')
-                screen.classList.remove('top-0')
-                screen.classList.remove('left-0')
-                screen.classList.remove('w-screen')
-                screen.classList.remove('h-screen')
-                screen.classList.remove('z-30')
+            if (screen.requestFullscreen) {
+                screen.requestFullscreen()
+            } else if (screen.mozRequestFullScreen) {
+                /* Firefox */
+                screen.mozRequestFullScreen()
+            } else if (screen.webkitRequestFullscreen) {
+                /* Chrome, Safari and Opera */
+                screen.webkitRequestFullscreen()
+            } else if (screen.msRequestFullscreen) {
+                /* IE/Edge */
+                screen.msRequestFullscreen()
+            }
+
+            if (
+                document.fullscreenElement ||
+                document.mozFullScreen ||
+                document.webkitIsFullScreen ||
+                document.msFullscreenElement
+            ) {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen()
+                } else if (document.mozCancelFullScreen) {
+                    /* Firefox */
+                    document.mozCancelFullScreen()
+                } else if (document.webkitExitFullscreen) {
+                    /* Chrome, Safari and Opera */
+                    document.webkitExitFullscreen()
+                } else if (document.msExitFullscreen) {
+                    /* IE/Edge */
+                    document.msExitFullscreen()
+                }
             }
         })
     })

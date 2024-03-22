@@ -5,4 +5,7 @@ const sliderCollapse = () => {
     slider.classList.toggle('opacity-50')
     body.classList.toggle('overflow-visible')
     body.classList.toggle('overflow-hidden')
+    setTimeout(() => {
+        slider.classList.toggle('transition-all')
+    }, 300)
 }
