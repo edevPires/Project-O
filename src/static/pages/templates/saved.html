@@ -25,7 +25,7 @@
         </style>
         <title>Salvos</title>
     </head>
-    <body>
+    <body class="overflow-x-hidden">
         <header
             class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-md"
         >
@@ -289,6 +289,9 @@
                             >
                         </em>
                     </div>
+                    <div
+                        class="savedCards poppins-regular my-6 h-fit w-full"
+                    ></div>
                 </div>
             </div>
         </main>
@@ -354,7 +357,43 @@
                 ></textarea>
             </div>
         </div>
+        <div
+            class="slider ease fixed -top-full left-0 z-30 w-screen scale-0 bg-slate-100 opacity-50 duration-1000"
+            style="height: 100dvh"
+        >
+            <div class="sliderContent relative h-full w-full overflow-hidden">
+                <div class="test absolute left-0 top-0 size-full"></div>
+                <!-- slider aq -->
+                <div
+                    class="absolute -left-[3rem] top-0 z-40 h-full w-[3rem] bg-red-200"
+                >
+                    <div class="relative size-full">
+                        <div
+                            class="sliderClose absolute left-full top-1/2 flex h-[5rem] w-[3.5rem] -translate-y-1/2 items-center justify-center rounded-br-2xl rounded-tr-2xl bg-blue-700 text-[2rem] shadow-lg hover:w-[4rem] hover:cursor-pointer md:w-[2.5rem]"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512"
+                                class="h-[2rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(255,255,255)"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="/src/static/js/utils/headerBar.js"></script>
+        <script src="/src/static/js/utils/iframeFull.js"></script>
+        <script src="/src/static/js/modules/iframeLinks.js"></script>
+        <script src="/src/static/js/utils/sliderContentLoader.js"></script>
+        <script src="/src/static/js/utils/sliderCollapse.js"></script>
+        <script src="/src/static/js/utils/savedCardsVal.js"></script>
+        <script src="/src/static/js/utils/saveCardHandler.js"></script>
         <script src="/src/static/js/modules/veias.js"></script>
         <script src="/src/static/js/components/moduleLoader.js"></script>
         <script src="/src/static/js/utils/accordion.js"></script>

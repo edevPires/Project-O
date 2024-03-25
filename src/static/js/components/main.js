@@ -29,8 +29,9 @@ const clickedDiv = document.querySelectorAll('.slide')
 
 clickedDiv.forEach((element) => {
     element.addEventListener('click', () => {
-        const dataAtribute = element.getAttribute('data-nome')
-        iframeLoader(dataAtribute)
+        const dataAtributeNome = element.getAttribute('data-nome')
+        const dataAtributeTipo = element.getAttribute('data-tipo')
+        iframeLoader(dataAtributeNome, dataAtributeTipo)
     })
 })
 
@@ -47,5 +48,14 @@ cardHeader.forEach((header) => {
     })
 })
 
-const noteBtn = document.querySelector('noteBtn')
-noteBtn = addEventListener('click', () => {})
+// saved cards
+
+if (localStorage.getItem('cards') === null) {
+    // Item não existe no localStorage
+    const cards = {
+        lista: [],
+    }
+
+    const cardsString = JSON.stringify(cards)
+    localStorage.setItem('cards', cardsString)
+}

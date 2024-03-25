@@ -1,4 +1,4 @@
-const sliderPicker = (telaCentral, tela2, tela3) => {
+const sliderPicker = (telaCentral, tela2, tela3, selectedType) => {
     var sliderContent = ``
     switch (selectedType) {
         case 'Ossos':
@@ -86,13 +86,13 @@ const sliderPicker = (telaCentral, tela2, tela3) => {
     loadFsBtns()
 }
 
-const iframeLoader = (dataName) => {
+const iframeLoader = (dataName, datatipo) => {
     iframeLinks.forEach((element) => {
         if (element.nome === dataName) {
             telaCentral = element.telaCentral
             tela2 = element.tela2
             tela3 = element.tela3
-            sliderPicker(telaCentral, tela2, tela3)
+            sliderPicker(telaCentral, tela2, tela3, datatipo)
         }
     })
 }

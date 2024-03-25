@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/output.css" />
+        <link rel="stylesheet" href="/src/input.css" />
+        <script
+            src="https://kit.fontawesome.com/f2caee6960.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Login</title>
+    </head>
+    <body class="bg-white-200 flex h-screen items-center justify-center">
+        <form
+            action="#"
+            class="relative m-5 w-[50rem] rounded-[1.5rem] border border-blue-900 p-10 shadow-xl"
+        >
+            <!-- Email input -->
+            <div class="flex flex-wrap">
+                <label
+                    for="cpf"
+                    class="w-full text-[2rem] font-light text-slate-800"
+                >
+                    CPF:
+                </label>
+                <input
+                    type="text"
+                    name="cpf"
+                    class="my-2 w-full rounded-xl p-[1rem] text-[2rem] font-normal text-slate-700 outline outline-1 outline-slate-700 focus:outline-2"
+                />
+            </div>
+
+            <!-- Password input -->
+            <div class="flex flex-wrap">
+                <label
+                    for="password"
+                    class="w-full text-[2rem] font-light text-slate-800"
+                >
+                    Senha:
+                </label>
+                <input
+                    type="password"
+                    name="password"
+                    class="my-2 my-4 w-full rounded-xl p-[1rem] text-[2rem] font-normal text-slate-700 outline outline-1 outline-slate-700 focus:outline-2"
+                />
+            </div>
+
+            <!-- Forgot password -->
+            <div class="my-[1rem]">
+                <a href="#" class="w-fit cursor-default">
+                    <p
+                        class="w-fit cursor-pointer text-[1.5rem] font-light text-blue-500 underline hover:text-blue-700"
+                    >
+                        Esqueceu a senha?
+                    </p>
+                </a>
+            </div>
+
+            <button
+                type="submit"
+                class="mt-5 w-full rounded-full bg-blue-600 py-[1rem] text-[2rem] text-white hover:bg-blue-700"
+            >
+                Entrar
+            </button>
+        </form>
+    </body>
+</html>

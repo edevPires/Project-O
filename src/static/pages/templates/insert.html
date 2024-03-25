@@ -17,44 +17,44 @@
         <link rel="stylesheet" href="/src/static/fonts/poppins/style.css" />
         <link rel="stylesheet" href="input.css" />
         <link rel="stylesheet" href="/src/static/fonts/rubik/style.css" />
-        <title>Insert</title>
     </head>
-    <body class="overflow-hidden">
+    <body class="flex justify-center overflow-visible">
         <header
-            class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white"
+            class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-sm"
         >
             <nav
-                class="z-20 flex h-header w-screen max-w-[1920px] items-center justify-between border-0 border-b-[1px] border-gray-300 bg-white px-8"
+                class="poppins-regular z-20 flex h-header w-screen max-w-[1920px] items-center justify-between border-gray-300 bg-white px-8"
             >
                 <div class="logo flex h-full items-center justify-center">
                     <img
-                        src="/src/static/img/logo/logo_full.png"
-                        alt="Karine"
-                        class="h-3/5 w-auto rounded-md lg:rounded-2xl"
+                        src="/src/static/img/logo/logo_small.PNG"
+                        class="h-[5rem] w-auto"
                     />
                 </div>
                 <div class="hidden h-full items-center justify-center md:flex">
-                    <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="/src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
-                            >Home</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -68,12 +68,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Para você</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -87,27 +87,27 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Buscar</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
+                            viewBox="0 0 384 512"
                             class="h-[2.5rem]"
                         >
                             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                                 fill="rgb(30 58 138)"
-                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"
+                                d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
-                            >Favoritos</span
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            >Salvos</span
                         >
                     </div>
                 </div>
@@ -143,32 +143,34 @@
                 </div>
             </nav>
             <div
-                class="headerBar fixed z-10 h-header w-screen max-w-[1920px] bg-gray-100 md:hidden"
+                class="headerBar poppins-regular fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
             >
                 <div
                     class="flex h-full w-full items-center justify-evenly md:flex"
                 >
-                    <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="/src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
-                            >Home</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -182,12 +184,12 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Para você</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -201,27 +203,27 @@
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
                             >Buscar</span
                         >
                     </div>
                     <div
-                        class="header-tabs mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
+                            viewBox="0 0 384 512"
                             class="h-[2.5rem]"
                         >
                             <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                             <path
                                 fill="rgb(30 58 138)"
-                                d="M287.9 0c9.2 0 17.6 5.2 21.6 13.5l68.6 141.3 153.2 22.6c9 1.3 16.5 7.6 19.3 16.3s.5 18.1-5.9 24.5L433.6 328.4l26.2 155.6c1.5 9-2.2 18.1-9.7 23.5s-17.3 6-25.3 1.7l-137-73.2L151 509.1c-8.1 4.3-17.9 3.7-25.3-1.7s-11.2-14.5-9.7-23.5l26.2-155.6L31.1 218.2c-6.5-6.4-8.7-15.9-5.9-24.5s10.3-14.9 19.3-16.3l153.2-22.6L266.3 13.5C270.4 5.2 278.7 0 287.9 0zm0 79L235.4 187.2c-3.5 7.1-10.2 12.1-18.1 13.3L99 217.9 184.9 303c5.5 5.5 8.1 13.3 6.8 21L171.4 443.7l105.2-56.2c7.1-3.8 15.6-3.8 22.6 0l105.2 56.2L384.2 324.1c-1.3-7.7 1.2-15.5 6.8-21l85.9-85.1L358.6 200.5c-7.8-1.2-14.6-6.1-18.1-13.3L287.9 79z"
+                                d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
                             />
                         </svg>
                         <span
-                            class="mt-2 flex items-center justify-center font-semibold text-blue-950 lg:text-xl"
-                            >Favoritos</span
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            >Salvos</span
                         >
                     </div>
                     <div
@@ -242,113 +244,47 @@
                 </div>
             </div>
         </header>
-        <main
-            class="flex w-full max-w-[1920px] flex-wrap overflow-hidden px-10 pt-headerSize"
+        <main class="w-full max-w-[1920px] px-10 pt-headerSize sm:px-[14rem]">
+            <div class="cardRow poppins-regular my-6 h-fit w-full"></div>
+        </main>
+        <div
+            class="slider ease fixed -top-full left-0 z-30 w-screen scale-0 bg-slate-100 opacity-50 duration-500"
+            style="height: 100dvh"
         >
-            <div class="w-full">
-                <em class="text-[4.5rem] font-light text-red-500">
-                    Módulo Anato
-                </em>
-            </div>
-            <div
-                class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-300"
-            >
-                <!-- card header sistema respiratório -->
+            <div class="sliderContent relative h-full w-full overflow-hidden">
+                <div class="test absolute left-0 top-0 size-full"></div>
+                <!-- slider aq -->
                 <div
-                    class="cardHeader poppins-regular relative line-clamp-1 flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[1.5rem] group-hover:bg-slate-100 sm:text-[2rem]"
+                    class="absolute -left-[3rem] top-0 z-40 h-full w-[3rem] bg-red-200"
                 >
-                    ${listItem}
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512 512"
-                        class="h-[2rem] transform transition-all duration-200"
-                    >
-                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path
-                            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
-                        />
-                    </svg>
-                </div>
-                <!-- card body sistema respiratório -->
-                <div
-                    class="cardBody h-full max-h-0 w-full flex-grow overflow-hidden rounded-bl-3xl rounded-br-3xl transition-all"
-                >
-                    <div class="flex flex-wrap justify-between transition-all">
-                        <!-- card buttons veias -->
-                        <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
-                            <div
-                                class="slide group m-8 my-8 flex h-[10rem] items-center justify-center rounded-2xl border-[1px] border-gray-400 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md"
+                    <div class="relative size-full">
+                        <div
+                            class="sliderClose absolute left-full top-1/2 flex h-[5rem] w-[3.5rem] -translate-y-1/2 items-center justify-center rounded-br-2xl rounded-tr-2xl bg-blue-700 text-[2rem] shadow-lg hover:w-[4rem] hover:cursor-pointer md:w-[2.5rem]"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 320 512"
+                                class="h-[2rem]"
                             >
-                                <span
-                                    class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
-                                >
-                                    Vizualização 3D
-                                </span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 512 512"
-                                    class="mx-3 h-[2.6rem]"
-                                >
-                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        fill="rgb(23 37 84 )"
-                                        d="M234.5 5.7c13.9-5 29.1-5 43.1 0l192 68.6C495 83.4 512 107.5 512 134.6V377.4c0 27-17 51.2-42.5 60.3l-192 68.6c-13.9 5-29.1 5-43.1 0l-192-68.6C17 428.6 0 404.5 0 377.4V134.6c0-27 17-51.2 42.5-60.3l192-68.6zM256 66L82.3 128 256 190l173.7-62L256 66zm32 368.6l160-57.1v-188L288 246.6v188z"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
-                            <div
-                                class="slide group m-8 my-8 flex h-[10rem] items-center justify-center rounded-2xl border-[1px] border-gray-400 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md"
-                            >
-                                <span
-                                    class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
-                                >
-                                    Periódicos
-                                </span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 448 512"
-                                    class="mx-3 h-[2.6rem]"
-                                >
-                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        fill="rgb(23 37 84 )"
-                                        d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
-                        <a class="min-w-full sm:min-w-[16rem] sm:flex-grow">
-                            <div
-                                class="slide group m-8 my-8 flex h-[10rem] items-center justify-center rounded-2xl border-[1px] border-gray-400 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:shadow-md"
-                            >
-                                <span
-                                    class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
-                                >
-                                    Estudo de Casos
-                                </span>
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 576 512"
-                                    class="mx-3 h-[2.6rem]"
-                                >
-                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                    <path
-                                        fill="rgb(23 37 84 )"
-                                        d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(255,255,255)"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                                />
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </div>
-        </main>
-
+        </div>
         <script src="/src/static/js/utils/headerBar.js"></script>
-        <script src="/src/static/js/modules/veias.js"></script>
-        <script src="/src/static/js/components/slider.js"></script>
+        <script src="/src/static/js/utils/moduleInserter.js"></script>
+        <script src="/src/static/js/utils/sliderCollapse.js"></script>
+        <script src="/src/static/js/utils/iframeFull.js"></script>
+        <script src="/src/static/js/utils/sliderContentLoader.js"></script>
+        <script src="/src/static/js/components/main.js"></script>
+        <script src="/src/static/js/components/iframeFull.js"></script>
         <script src="/src/static/js/utils/accordion.js"></script>
+        <script src="/src/static/js/modules/iframeLinks.js"></script>
     </body>
 </html>

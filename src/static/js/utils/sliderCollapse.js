@@ -1,4 +1,7 @@
 const sliderCollapse = () => {
+    const body = document.querySelector('body')
+
+    body.classList.toggle('overflow-y-hidden')
     slider.classList.toggle('transition-all')
     slider.classList.toggle('translate-y-full')
     slider.classList.toggle('scale-0')
