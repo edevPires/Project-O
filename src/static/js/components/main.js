@@ -50,12 +50,7 @@ cardHeader.forEach((header) => {
 
 // saved cards
 
-if (localStorage.getItem('cards') === null) {
-    // Item não existe no localStorage
-    const cards = {
-        lista: [],
-    }
-
-    const cardsString = JSON.stringify(cards)
-    localStorage.setItem('cards', cardsString)
-}
+const search = document.querySelector('#search')
+search.addEventListener('click', () => {
+    indexHander(search)
+})

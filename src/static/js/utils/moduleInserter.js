@@ -10,18 +10,32 @@ const moduleInserter = (list, name, type) => {
     var textColor = textColorPicker()
 
     const moduleTitle = `
-    <div class="w-full">
-                <em class="text-[3.5rem] font-light text-blue-950">
-                    ${name}
-                </em>
-            </div>
+    <div class="w-full flex flex-wrap items-center justify-center sm:justify-between">
+        <em class="text-[3.5rem] font-light text-blue-950">
+            ${name}
+        </em>
+        <div
+            class="searchBar my-[2rem] flex justify-center size-fit h-fit w-fit translate-y-0 items-center rounded-full transition-all sm:my-0 sm:w-fit w-full"
+        >
+            <span
+                class="poppins-light mr-[1rem] text-[1.5rem] text-blue-950"
+                >Buscar</span
+            >
+            <input
+                type="text"
+                id="search"
+                class="text flex items-center rounded-full border border-solid border-blue-900 px-[2.5rem] py-[0.5rem] text-[2rem] no-underline outline-none w-[30rem] min-w-[30rem] poppins-regular"
+            />
+        </div>
+    </div>
 `
     const mainRow = document.querySelector('.cardRow')
     mainRow.insertAdjacentHTML('beforeend', moduleTitle)
 
     list.forEach((listItem) => {
         const rows = `<div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-300"
+                    class="cardRow dataIndex my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm transition-shadow duration-300"
+                    data-index='´${listItem.toLowerCase()}´'
                 >
                     <!-- card header sistema respiratório -->
                     <div

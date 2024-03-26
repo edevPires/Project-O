@@ -3,8 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/output.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/src/input.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -15,15 +13,11 @@
             href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/src/static/fonts/poppins/style.css" />
-        <link rel="stylesheet" href="input.css" />
-        <link rel="stylesheet" href="/src/static/fonts/rubik/style.css" />
-        <style>
-            .noteCard:nth-child(even) div {
-                border-color: rgb(239 68 68);
-            }
-        </style>
-        <title>Salvos</title>
+        <link href="../../../output.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../../fonts/poppins/style.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/animate.css" />
+        <title>Karine Med</title>
     </head>
     <body class="overflow-x-hidden">
         <header
@@ -34,12 +28,12 @@
             >
                 <div class="logo flex h-full items-center justify-center">
                     <img
-                        src="/src/static/img/logo/logo_small.PNG"
+                        src="../../img/logo/logo_small.PNG"
                         class="h-[5rem] w-auto"
                     />
                 </div>
                 <div class="hidden h-full items-center justify-center md:flex">
-                    <a href="/src/index.html">
+                    <a href="../../../index.html">
                         <div
                             class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
@@ -79,26 +73,27 @@
                             >Para você</span
                         >
                     </div>
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            class="h-[2.5rem]"
+                    <a href="../../pages/templates/license.html">
+                        <div
+                            class="header-tabs searchBtn group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Buscar</span
-                        >
-                    </div>
-                    <a href="/src/static/pages/templates/saved.html">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem] fill-blue-900"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Licença</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../../pages/templates/saved.html">
                         <div
                             class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
@@ -155,9 +150,9 @@
                 class="headerBar poppins-regular fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
             >
                 <div
-                    class="flex h-full w-full items-center justify-evenly md:flex"
+                    class="relative flex h-full w-full items-center justify-evenly md:flex"
                 >
-                    <a href="/src/index.html">
+                    <a href="../../../index.html">
                         <div
                             class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
@@ -197,26 +192,27 @@
                             >Para você</span
                         >
                     </div>
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            class="h-[2.5rem]"
+                    <a href="../../pages/templates/license.html">
+                        <div
+                            class="header-tabs searchBtn group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Buscar</span
-                        >
-                    </div>
-                    <a href="/src/static/pages/templates/saved.html">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem] fill-blue-900"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                                />
+                            </svg>
+                            <span
+                                class="search_btn mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Licença</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../../pages/templates/saved.html">
                         <div
                             class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
@@ -254,6 +250,7 @@
                     </div>
                 </div>
             </div>
+            <!--  -->
         </header>
         <main class="mx-auto w-full max-w-[1920px] px-10 pt-headerSize lg:px-0">
             <div class="w-full lg:px-[14rem]">
@@ -289,6 +286,7 @@
                             >
                         </em>
                     </div>
+
                     <div
                         class="savedCards poppins-regular my-6 h-fit w-full"
                     ></div>
@@ -387,18 +385,18 @@
                 </div>
             </div>
         </div>
-        <script src="/src/static/js/utils/headerBar.js"></script>
-        <script src="/src/static/js/utils/iframeFull.js"></script>
-        <script src="/src/static/js/modules/iframeLinks.js"></script>
-        <script src="/src/static/js/utils/sliderContentLoader.js"></script>
-        <script src="/src/static/js/utils/sliderCollapse.js"></script>
-        <script src="/src/static/js/utils/savedCardsVal.js"></script>
-        <script src="/src/static/js/utils/saveCardHandler.js"></script>
-        <script src="/src/static/js/modules/veias.js"></script>
-        <script src="/src/static/js/components/moduleLoader.js"></script>
-        <script src="/src/static/js/utils/accordion.js"></script>
-        <script src="/src/static/js/utils/noteInserter.js"></script>
-        <script src="/src/static/js/components/script.js"></script>
-        <script src="/src/static/js/components/saved.js"></script>
+        <script src="../../js/utils/headerBar.js"></script>
+        <script src="../../js/utils/iframeFull.js"></script>
+        <script src="../../js/modules/iframeLinks.js"></script>
+        <script src="../../js/utils/sliderContentLoader.js"></script>
+        <script src="../../js/utils/sliderCollapse.js"></script>
+        <script src="../../js/utils/savedCardsVal.js"></script>
+        <script src="../../js/utils/saveCardHandler.js"></script>
+        <script src="../../js/modules/veias.js"></script>
+        <script src="../../js/components/moduleLoader.js"></script>
+        <script src="../../js/utils/accordion.js"></script>
+        <script src="../../js/utils/noteInserter.js"></script>
+        <script src="../../js/components/script.js"></script>
+        <script src="../../js/components/saved.js"></script>
     </body>
 </html>

@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="/output.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -14,9 +13,9 @@
             href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/src/static/fonts/poppins/style.css" />
-        <link rel="stylesheet" href="input.css" />
-        <link rel="stylesheet" href="/src/static/fonts/rubik/style.css" />
+        <link href="./output.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./static/fonts/poppins/style.css" />
+        <link rel="stylesheet" href="./static/css/style.css" />
         <link rel="stylesheet" href="./static/css/animate.css" />
         <title>Karine Med</title>
     </head>
@@ -29,30 +28,32 @@
             >
                 <div class="logo flex h-full items-center justify-center">
                     <img
-                        src="/src/static/img/logo/logo_small.PNG"
+                        src="../src/static/img/logo/logo_small.PNG"
                         class="h-[5rem] w-auto"
                     />
                 </div>
                 <div class="hidden h-full items-center justify-center md:flex">
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="../src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Home</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
                     <div
                         class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
@@ -72,26 +73,27 @@
                             >Para você</span
                         >
                     </div>
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            class="h-[2.5rem]"
+                    <a href="../src/static/pages/templates/license.html">
+                        <div
+                            class="header-tabs searchBtn group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Buscar</span
-                        >
-                    </div>
-                    <a href="/src/static/pages/templates/saved.html">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem] fill-blue-900"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Licença</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../src/static/pages/templates/saved.html">
                         <div
                             class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
@@ -148,27 +150,29 @@
                 class="headerBar poppins-regular fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
             >
                 <div
-                    class="flex h-full w-full items-center justify-evenly md:flex"
+                    class="relative flex h-full w-full items-center justify-evenly md:flex"
                 >
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 576 512"
-                            class="h-[2.5rem]"
+                    <a href="../src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Home</span
-                        >
-                    </div>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
                     <div
                         class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                     >
@@ -188,26 +192,27 @@
                             >Para você</span
                         >
                     </div>
-                    <div
-                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 512 512"
-                            class="h-[2.5rem]"
+                    <a href="../src/static/pages/templates/license.html">
+                        <div
+                            class="header-tabs searchBtn group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
-                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                            <path
-                                fill="rgb(30 58 138)"
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
-                            />
-                        </svg>
-                        <span
-                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
-                            >Buscar</span
-                        >
-                    </div>
-                    <a href="/src/static/pages/templates/saved.html">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem] fill-blue-900"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                                />
+                            </svg>
+                            <span
+                                class="search_btn mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Licença</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../src/static/pages/templates/saved.html">
                         <div
                             class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
                         >
@@ -245,27 +250,52 @@
                     </div>
                 </div>
             </div>
+            <!--  -->
         </header>
         <main class="w-full max-w-[1920px] px-10 pt-headerSize lg:px-0">
-            <div class="w-full lg:px-[14rem]">
-                <div class="mt-4">
-                    <em class="text-[4.5rem] font-light text-blue-950">
-                        Módulo
+            <div class="mb-[4rem] w-full lg:px-[14rem]">
+                <div
+                    class="mt-[4rem] flex flex-wrap items-center justify-center sm:justify-between"
+                >
+                    <div>
                         <em
-                            class="inline text-[4.5rem] font-normal text-red-500"
-                            >Anato</em
+                            class="h-fit text-[4.5rem] font-light leading-10 text-blue-950 sm:w-full"
                         >
-                    </em>
+                            Módulo
+                            <em
+                                class="inline h-fit text-[4.5rem] font-normal text-red-500"
+                                >Anato</em
+                            >
+                        </em>
+                    </div>
+                    <div
+                        class="searchBar my-[2rem] flex size-fit h-fit w-fit w-full translate-y-0 items-center justify-center rounded-full transition-all sm:my-0 sm:w-fit"
+                    >
+                        <span
+                            class="poppins-light mr-[1rem] text-[1.5rem] text-blue-950"
+                            >Buscar</span
+                        >
+                        <input
+                            type="text"
+                            id="search"
+                            class="text poppins-regular flex w-[30rem] min-w-[30rem] items-center rounded-full border border-solid border-blue-900 px-[2.5rem] py-[0.5rem] text-[2rem] no-underline outline-none"
+                        />
+                    </div>
                 </div>
                 <!-- CARD ROW VEIAS-->
                 <div
-                    class="cardRow eduration-500 my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    class="cardRow dataIndex eduration-500 my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    data-index="veias"
                 >
                     <!-- card header veias -->
                     <div
-                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 bg-transparent px-8 text-[2.2rem] font-medium text-slate-900"
+                        class="cardHeader relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 bg-transparent px-8"
                     >
-                        Veias
+                        <span
+                            class="poppins-regular text-[2.2rem] text-slate-900"
+                        >
+                            Veias
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -290,6 +320,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veia Cava Superior"
+                                data-index="veia cava Superior"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -305,6 +336,7 @@
                                 href="./static/pages/templates/main.html"
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
+                                data-nome="Veias Jugulares"
                                 data-nome="Veias Jugulares"
                             >
                                 <div
@@ -322,6 +354,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veias Pulmonares"
+                                data-index="veias pulmonares"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -338,6 +371,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veia Cava Inferior"
+                                data-index="veia cava inferior"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -354,6 +388,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veias do Abdome"
+                                data-index="veias do abdome"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -370,6 +405,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veias do Membro Superior"
+                                data-index="veias do membro superior"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -386,6 +422,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veias do Membro Inferior"
+                                data-index="veias do membro inferior"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -402,6 +439,7 @@
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Veias"
                                 data-nome="Veias do Pé"
+                                data-index="veias do pé"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-rose-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-rose-200 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -418,13 +456,18 @@
                 </div>
                 <!-- CARD ROW OSSOS -->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    class="cardRow dataIndex my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    data-index="ossos"
                 >
                     <!-- card header ossos -->
                     <div
-                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium text-slate-900 group-hover:bg-slate-100"
+                        class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 group-hover:bg-slate-100"
                     >
-                        Ossos
+                        <span
+                            class="poppins-regular text-[2.2rem] text-slate-900"
+                        >
+                            Ossos
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -575,13 +618,18 @@
                 </div>
                 <!-- CARD ROW MÚSCULOS -->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    class="cardRow dataIndex my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    data-index="músculos"
                 >
                     <!-- card header músculos -->
                     <div
                         class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium text-slate-900 group-hover:bg-slate-100"
                     >
-                        Músculos
+                        <span
+                            class="poppins-regular text-[2.2rem] text-slate-900"
+                        >
+                            Músculos
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -892,13 +940,18 @@
                 </div>
                 <!-- CARD ROWS ARTICULAÇÕES -->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    class="cardRow dataIndex my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    data-index="articulações"
                 >
                     <!-- card header articulações -->
                     <div
                         class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium text-slate-900 group-hover:bg-slate-100"
                     >
-                        Articulações
+                        <span
+                            class="poppins-regular text-[2.2rem] text-slate-900"
+                        >
+                            Articulações
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -985,13 +1038,18 @@
                 </div>
                 <!-- CARD ROW SISTEMA NERVOSO -->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    class="cardRow dataIndex my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    data-index="sistema nervoso"
                 >
                     <!-- card header sistema nervoso -->
                     <div
                         class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium text-slate-900 group-hover:bg-slate-100"
                     >
-                        Sistema Nervoso
+                        <span
+                            class="poppins-regular text-[2.2rem] text-slate-900"
+                        >
+                            Sistema Nervoso
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -1060,7 +1118,7 @@
                                 href="/src/static/pages/templates/main.html"
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Sistema Nervoso"
-                                data-nome="PAG-T1"
+                                data-nome="Nervos Cranianos"
                             >
                                 <div
                                     class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
@@ -1068,7 +1126,55 @@
                                     <span
                                         class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
                                     >
-                                        PAG-T1
+                                        Nervos Cranianos
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Nervos Espinhais"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Nervos Espinhais
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Gânglios Nervosos"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Gânglios Nervosos
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Plexos Nervosos"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Plexos Nervosos
                                     </span>
                                 </div>
                             </a>
@@ -1088,29 +1194,6 @@
                                     </span>
                                 </div>
                             </a>
-                            <div class="w-full px-8">
-                                <em
-                                    class="poppins-light text-[2.2rem] text-emerald-700"
-                                >
-                                    Células do Sistema Nervoso
-                                </em>
-                            </div>
-                            <a
-                                href="/src/static/pages/templates/main.html"
-                                class="cardBtn w-full sm:w-auto"
-                                data-tipo="Sistema Nervoso"
-                                data-nome="PAG-T1"
-                            >
-                                <div
-                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
-                                >
-                                    <span
-                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
-                                    >
-                                        PAG-T1
-                                    </span>
-                                </div>
-                            </a>
                             <a
                                 href="/src/static/pages/templates/main.html"
                                 class="cardBtn w-full sm:w-auto"
@@ -1127,6 +1210,7 @@
                                     </span>
                                 </div>
                             </a>
+
                             <div class="mt-4 w-full px-8">
                                 <em
                                     class="poppins-light text-[2.2rem] text-emerald-700"
@@ -1165,18 +1249,100 @@
                                     </span>
                                 </div>
                             </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-emerald-700"
+                                >
+                                    Sistema Nervoso Autônomo (SNA)
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Divisão Simpática"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Divisão Simpática
+                                    </span>
+                                </div> </a
+                            ><a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Divisão Parassimpática"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Divisão Parassimpática
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-emerald-700"
+                                >
+                                    Barreiras Protetoras
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Barreira Hematocefálica"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Barreira Hematocefálica
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Nervoso"
+                                data-nome="Meninges"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-emerald-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-emerald-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-emerald-700"
+                                    >
+                                        Meninges
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- CARD ROW SISTEMA RESPIRATÓRIO -->
                 <div
-                    class="cardRow my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    class="cardRow dataIndex my-6 h-fit w-full rounded-3xl border border-blue-950 border-opacity-40 shadow-sm hover:cursor-pointer hover:shadow-lg"
+                    data-index="sistema respiratório"
                 >
                     <!-- card header sistema respiratório -->
                     <div
                         class="cardHeader poppins-regular relative flex h-cardHeader items-center justify-between border-blue-950 border-opacity-40 px-8 text-[2.2rem] font-medium text-slate-900 group-hover:bg-slate-100"
                     >
-                        Sistema Respiratório
+                        <span
+                            class="poppins-regular text-[2.2rem] text-slate-900"
+                        >
+                            Sistema Respiratório
+                        </span>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
@@ -1194,6 +1360,84 @@
                     >
                         <div class="flex flex-wrap">
                             <!-- card buttons sistema respiratório -->
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-blue-700"
+                                >
+                                    Porção Superior
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Fossas Nazais"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Fossas Nazais
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Cavidade Oral"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Cavidade Oral
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Faringe"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Faringe
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-blue-700"
+                                >
+                                    Porção Inferior (Condutora)
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Laringe"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Laringe
+                                    </span>
+                                </div>
+                            </a>
                             <a
                                 href="/src/static/pages/templates/main.html"
                                 class="cardBtn w-full sm:w-auto"
@@ -1201,7 +1445,7 @@
                                 data-nome="Traquéia"
                             >
                                 <div
-                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
                                         class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
@@ -1214,15 +1458,123 @@
                                 href="/src/static/pages/templates/main.html"
                                 class="cardBtn w-full sm:w-auto"
                                 data-tipo="Sistema Respiratório"
-                                data-nome="Nervos Cranianos"
+                                data-nome="Brônquios"
                             >
                                 <div
-                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-200 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
                                 >
                                     <span
                                         class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
                                     >
-                                        Bronquios e Bronquíolos
+                                        Brônquios
+                                    </span>
+                                </div>
+                            </a>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Bronquíolos"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Bronquíolos
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-blue-700"
+                                >
+                                    Zona Respiratória
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Alvéolos"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Alvéolos
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-blue-700"
+                                >
+                                    Órgãos Principais
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Pulmões"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Pulmões
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-blue-700"
+                                >
+                                    Músculos Envolvidos
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Diafragma"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Diafragma
+                                    </span>
+                                </div>
+                            </a>
+                            <div class="mt-4 w-full px-8">
+                                <em
+                                    class="poppins-light text-[2.2rem] text-blue-700"
+                                >
+                                    Membranas Serosas
+                                </em>
+                            </div>
+                            <a
+                                href="/src/static/pages/templates/main.html"
+                                class="cardBtn w-full sm:w-auto"
+                                data-tipo="Sistema Respiratório"
+                                data-nome="Pleura"
+                            >
+                                <div
+                                    class="group m-8 my-8 flex h-[12rem] flex-grow items-center rounded-2xl border-[1px] border-gray-300 p-4 shadow-sm transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:border-blue-700 hover:bg-gray-50 hover:shadow-lg hover:shadow-blue-100 sm:min-w-[16rem] sm:max-w-[16rem]"
+                                >
+                                    <span
+                                        class="poppins-medium flex w-full items-center justify-center text-center text-[1.5rem] duration-200 group-hover:text-blue-700"
+                                    >
+                                        Pleura
                                     </span>
                                 </div>
                             </a>
@@ -1323,10 +1675,11 @@
             </svg>
         </div>
         <script src="./static/js/utils/headerBar.js"></script>
+        <script src="./static/js/utils/indexHandler.js"></script>
         <script src="./static/js/modules/veias.js"></script>
         <script src="./static/js/components/moduleLoader.js"></script>
         <script src="./static/js/utils/accordion.js"></script>
-        <script src="/src/static/js/components/script.js"></script>
+        <script src="./static/js/components/script.js"></script>
         <script src="./static/js/components/noteHandler.js"></script>
     </body>
 </html>

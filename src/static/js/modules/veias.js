@@ -853,14 +853,24 @@ var data = [
                 ],
             },
             {
-                nome: 'PAG-T1',
-                tipos: [
-                    'Nervos Cranianaos',
-                    'Nervos Espinhais',
-                    'Gânglios Nervosos',
-                    'Plexos Nervosos',
-                    'Receptores Nervosos',
-                ],
+                nome: 'Nervos Cranianos',
+                tipos: ['Nervos Cranianos'],
+            },
+            {
+                nome: 'Nervos Espinhais',
+                tipos: ['Nervos Espinhais'],
+            },
+            {
+                nome: 'Gânglios Nervosos',
+                tipos: ['Gânglios Nervosos'],
+            },
+            {
+                nome: 'Plexos Nervosos',
+                tipos: ['Plexos Nervosos'],
+            },
+            {
+                nome: 'Receptores Nervosos',
+                tipos: ['Receptores Nervosos'],
             },
             {
                 nome: 'Receptores Nervosos',
@@ -881,6 +891,103 @@ var data = [
                     'Micróglia',
                     'Oligodendrócitos',
                     'Ependimárias',
+                ],
+            },
+            {
+                nome: 'Divisão Simpática',
+                tipos: ['Divisão Simpática'],
+            },
+            {
+                nome: 'Divisão Parassimpática',
+                tipos: ['Divisão Parassimpática'],
+            },
+            {
+                nome: 'Barreira Hematocefálica',
+                tipos: ['Barreira Hematocefálica'],
+            },
+            {
+                nome: 'Meninges',
+                tipos: ['Dura-máter', 'Aracnoide', 'Pia-máter'],
+            },
+        ],
+    },
+    {
+        tipo: 'Sistema Respiratório',
+        lista: [
+            {
+                nome: 'Fossas Nazais',
+                tipos: [
+                    'Vestibulo nasal',
+                    'Septo nasal',
+                    'Conchas nasais superiores',
+                    'Conhcas nasais médias',
+                    'Conchas nasais inferiores',
+                    'Meato nasal inferior',
+                ],
+            },
+            {
+                nome: 'Cavidade Oral',
+                tipos: ['Palato duro', 'Palato mole', 'Úvula'],
+            },
+            {
+                nome: 'Faringe',
+                tipos: ['Nasofaringe', 'Orofaringe', 'Laringofaringe'],
+            },
+            {
+                nome: 'Laringe',
+                tipos: [
+                    'Cartilagem tireoide',
+                    'Cartilagem cricoide',
+                    'Cartilagens aritenoide',
+                    'Cartilagens corniculada',
+                    'Glote',
+                ],
+            },
+            {
+                nome: 'Traquéia',
+                tipos: [
+                    'Anéis cartilaginosos',
+                    'Músculos traqueais',
+                    'Membrana traqueais',
+                ],
+            },
+            {
+                nome: 'Brônquios',
+                tipos: ['Principais', 'Lobares', 'Segmentares'],
+            },
+            {
+                nome: 'Bronquíolos',
+                tipos: ['Terminais', 'Respiratórios', 'Alveolares'],
+            },
+            {
+                nome: 'Alvéolos',
+                tipos: ['Membra alveolocapilar', 'Macrófagos alveolares'],
+            },
+            {
+                nome: 'Pulmões',
+                tipos: [
+                    'Pleura visceral e parietal',
+                    'Hilo pulmonar',
+                    'Lobos superior direito',
+                    'Lobos médio direito',
+                    'Lobos inferior direito',
+                    'Lobos superior esquerdo',
+                    'Lobos médio esquerdo',
+                    'Lobos inferior esquerdo',
+                    'Segmentos pulmonares',
+                ],
+            },
+            {
+                nome: 'Diafragma',
+                tipos: ['Centros frênicos', 'Tendão central do diafragma'],
+            },
+            {
+                nome: 'Pleura',
+                tipos: [
+                    'Pleura Visceral',
+                    'Pleura parietal',
+                    'Cavidade pleural',
+                    'Ligamentos pulmonares',
                 ],
             },
         ],

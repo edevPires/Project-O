@@ -36,7 +36,7 @@ const saveCardHandler = (nome, tipo, textEl, svgEl) => {
         svgEl.classList.add('fill-white')
         textEl.parentNode.classList.add('bg-blue-900')
         textEl.classList.add('text-white')
-        textEl.textContent = 'salvo'
+        textEl.textContent = 'Salvo'
 
         setCards(savedCards)
         return false

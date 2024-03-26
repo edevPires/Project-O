@@ -364,7 +364,7 @@ saveBtn.forEach((saveBtnElement) => {
         savedBtnSVG.classList.add('fill-white')
         savedBtnTxt.parentNode.classList.add('bg-blue-900')
         savedBtnTxt.classList.add('text-white')
-        savedBtnTxt.textContent = 'salvo'
+        savedBtnTxt.textContent = 'Salvo'
     }
     saveBtnElement.addEventListener('click', () => {
         saveCardHandler(dataAttName, dataAttType, savedBtnTxt, savedBtnSVG)
