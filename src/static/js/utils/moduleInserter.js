@@ -119,7 +119,7 @@ const moduleInserter = (list, name, type) => {
                                     <span
                                         class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
                                     >
-                                        Periódicos
+                                        Data Science
                                     </span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -141,7 +141,7 @@ const moduleInserter = (list, name, type) => {
                                     <span
                                         class="group-hover:text${textColor}-500 poppins-medium flex items-center text-[1.5rem] font-bold text-blue-950 duration-200"
                                     >
-                                        Estudo de Casos
+                                        Notas do professor
                                     </span>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../../output.css" />
+        <script
+            src="https://kit.fontawesome.com/cad463d649.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>8KA-Library</title>
+
+        <style>
+            * {
+                --main-font-color: rgb(23 37 84);
+            }
+        </style>
+    </head>
+    <body class="h-[100dvh] bg-slate-100">
+        <section class="flex h-full flex-col justify-center">
+            <section
+                class="z-20 flex flex-grow-0 justify-center border-b bg-white"
+            >
+                <div
+                    class="top-bar flex max-h-28 w-full items-center justify-between px-5"
+                >
+                    <div class="logo flex flex-shrink-0 justify-center">
+                        <img
+                            src="../../img/logo/8KA.png"
+                            alt="c:\Users\Pires\Downloads\karineBook.png"
+                            class="h-24 w-auto"
+                        />
+                    </div>
+                    <div
+                        class="search-box m-10 hidden h-fit max-w-[35rem] flex-shrink sm:flex"
+                    >
+                        <div
+                            class="flex h-16 items-center justify-center rounded-3xl border"
+                        >
+                            <input
+                                type="text"
+                                class="mx-5 w-full text-2xl outline-none"
+                                placeholder="Pesquisar"
+                            />
+                            <button class="h-full border-l px-5">
+                                <i
+                                    class="fa-solid fa-magnifying-glass fa-2xl text-cyan-700"
+                                ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="filters flex">
+                        <span
+                            class="flex items-center justify-center px-5 text-2xl font-semibold sm:hidden"
+                        >
+                            <i
+                                class="fa-solid fa-magnifying-glass fa-lg text-cyan-700"
+                            ></i>
+                        </span>
+                        <span
+                            class="flex items-center justify-center px-5 text-2xl font-semibold"
+                        >
+                            <i
+                                class="fa-solid fa-filter fa-lg m-2 text-cyan-700"
+                            ></i>
+                            <button class="hidden text-slate-900 sm:flex">
+                                Filtro
+                            </button>
+                        </span>
+                        <span
+                            class="flex items-center justify-center px-5 text-2xl font-semibold"
+                        >
+                            <i
+                                class="fa-solid fa-arrow-up-wide-short fa-lg m-2 text-cyan-700"
+                            ></i>
+                            <button class="hidden text-slate-900 sm:flex">
+                                Classificação
+                            </button>
+                        </span>
+                        <span
+                            class="flex items-center justify-center px-5 text-2xl font-semibold"
+                        >
+                            <i
+                                class="fa-solid fa-grip-vertical fa-lg m-2 text-cyan-700"
+                            ></i>
+                            <button class="hidden text-slate-900 sm:flex">
+                                Visualizar
+                            </button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section
+                class="flex h-full flex-grow flex-nowrap overflow-y-hidden"
+            >
+                <div
+                    id="leftBarOverlay"
+                    class="pointer-events-none absolute left-0 top-0 z-10 h-full w-full bg-black opacity-0 transition-opacity"
+                ></div>
+                <!-- onclick w-[25rem] -->
+                <div
+                    class="left-bar fixed z-20 flex h-full w-[6rem] flex-shrink-0 flex-grow-0 flex-col border-r bg-white transition-all sm:relative sm:mt-0 sm:w-[25rem]"
+                >
+                    <button
+                        id="books"
+                        class="my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
+                    >
+                        <i
+                            class="fa-solid fa-book fa-2x mx-8 h-fit w-[2.8rem] text-slate-700"
+                        ></i>
+                        <div class="mobile-view hidden flex-grow sm:flex">
+                            <span
+                                class="flex-grow items-center text-start text-2xl font-semibold sm:flex"
+                            >
+                                Livros
+                            </span>
+                            <div class="sm:flex">
+                                <i
+                                    class="fa-solid fa-chevron-down fa-xl m-5 flex h-fit justify-center text-slate-700"
+                                ></i>
+                            </div>
+                        </div>
+                    </button>
+                    <ul id="books-list"></ul>
+                    <button
+                        id="articles"
+                        class="my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
+                    >
+                        <i
+                            class="fa-solid fa-newspaper fa-2x mx-8 h-fit w-[2.8rem] text-slate-700"
+                        ></i>
+                        <div class="mobile-view hidden flex-grow sm:flex">
+                            <span
+                                class="flex-grow items-center text-start text-2xl font-semibold sm:flex"
+                            >
+                                Artigos
+                            </span>
+                            <div class="sm:flex">
+                                <i
+                                    class="fa-solid fa-chevron-down fa-xl m-5 flex h-fit justify-center text-slate-700"
+                                ></i>
+                            </div>
+                        </div>
+                    </button>
+                    <ul id="articles-list"></ul>
+                    <button
+                        id="periodics"
+                        class="my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
+                    >
+                        <i
+                            class="fa-solid fa-stethoscope fa-2x mx-8 h-fit w-[2.8rem] text-slate-700"
+                        ></i>
+                        <div class="mobile-view hidden flex-grow sm:flex">
+                            <span
+                                class="flex-grow items-center text-start text-2xl font-semibold sm:flex"
+                            >
+                                Periódicos
+                            </span>
+                            <div class="sm:flex">
+                                <i
+                                    class="fa-solid fa-chevron-down fa-xl m-5 flex h-fit justify-center text-slate-700"
+                                ></i>
+                            </div>
+                        </div>
+                    </button>
+                    <ul id="periodics_list"></ul>
+                </div>
+                <main class="flex-grow overflow-y-auto px-5" id="8KA-Library">
+                    <embed
+                        src=""
+                        class="absolute left-0 top-0 z-30 hidden h-full w-full transition-all duration-1000"
+                        id="PDFViewer"
+                    />
+
+                    <div
+                        class="row-auto grid h-full w-full auto-rows-min grid-cols-2 gap-0 pl-[6rem] sm:pl-0 md:grid-cols-3 lg:grid-cols-4"
+                    >
+                        <div
+                            class="book group h-fit px-8 py-4 transition-transform hover:scale-105 hover:cursor-pointer lg:px-16 lg:py-8"
+                        >
+                            <img
+                                src="../../img/8KALibrary/covers/Medicina_General_Integral_Capa.jpg"
+                                alt=""
+                                class="shadow-md shadow-slate-400 transition-shadow group-hover:shadow-lg"
+                            />
+                            <div>
+                                <h1
+                                    class="book-title line-clamp-1 text-ellipsis text-2xl font-bold leading-loose"
+                                >
+                                    Medicina General Integral Vol.1
+                                </h1>
+                                <h2
+                                    class="book-author line-clamp-1 text-ellipsis text-xl font-semibold leading-snug text-slate-500"
+                                >
+                                    Alvares Sintes
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </section>
+        </section>
+        <script src="../../js/modules/library.js"></script>
+        <script src="../../js/utils/8KA/libPDFLoader.js"></script>
+        <script src="../../js/components/8KA/libEngine.js"></script>
+    </body>
+</html>
