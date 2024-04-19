@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="../../../output.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./static/fonts/poppins/style.css" />
+        <link rel="stylesheet" href="./static/css/style.css" />
+        <link rel="stylesheet" href="./static/css/animate.css" />
+        <title>Karine Med</title>
+    </head>
+    <body>
+        <header
+            class="fixed z-20 flex h-[10rem] w-screen items-center justify-center bg-white shadow-md"
+        >
+            <nav
+                class="poppins-regular z-20 flex h-header w-screen max-w-[1920px] items-center justify-between border-gray-300 bg-white px-8"
+            >
+                <div class="logo flex h-full items-center justify-center">
+                    <img
+                        src="../../img/logo/logo_small.PNG"
+                        class="h-[5rem] w-auto"
+                    />
+                </div>
+                <div class="hidden h-full items-center justify-center md:flex">
+                    <a href="../src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
+                    <div
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            class="h-[2.5rem]"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                fill="rgb(30 58 138)"
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+                            />
+                        </svg>
+                        <span
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            >Para você</span
+                        >
+                    </div>
+                    <a href="../src/static/pages/templates/license.html">
+                        <div
+                            class="header-tabs searchBtn group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem] fill-blue-900"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Licença</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../src/static/pages/templates/saved.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Salvos</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../src/static/pages/templates/areas.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M142.4 21.9c5.6 16.8-3.5 34.9-20.2 40.5L96 71.1V192c0 53 43 96 96 96s96-43 96-96V71.1l-26.1-8.7c-16.8-5.6-25.8-23.7-20.2-40.5s23.7-25.8 40.5-20.2l26.1 8.7C334.4 19.1 352 43.5 352 71.1V192c0 77.2-54.6 141.6-127.3 156.7C231 404.6 278.4 448 336 448c61.9 0 112-50.1 112-112V265.3c-28.3-12.3-48-40.5-48-73.3c0-44.2 35.8-80 80-80s80 35.8 80 80c0 32.8-19.7 61-48 73.3V336c0 97.2-78.8 176-176 176c-92.9 0-168.9-71.9-175.5-163.1C87.2 334.2 32 269.6 32 192V71.1c0-27.5 17.6-52 43.8-60.7l26.1-8.7c16.8-5.6 34.9 3.5 40.5 20.2zM480 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Áreas</span
+                            >
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="user hidden items-center justify-center rounded-full bg-blue-900 sm:flex md:h-[6rem] md:w-[6rem]"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="md:h-[3rem]"
+                    >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            fill="#ffffff"
+                            d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"
+                        />
+                    </svg>
+                </div>
+                <div
+                    class="hambMenu flex h-full items-center justify-center hover:cursor-pointer md:hidden"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        class="h-[3.5rem]"
+                    >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            fill="rgb(30 58 138)"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        />
+                    </svg>
+                </div>
+            </nav>
+            <div
+                class="headerBar poppins-regular fixed top-0 z-10 h-header w-screen max-w-[1920px] bg-gray-100 transition-all md:hidden"
+            >
+                <div
+                    class="relative flex h-full w-full items-center justify-evenly md:flex"
+                >
+                    <a href="../src/index.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Home</span
+                            >
+                        </div>
+                    </a>
+                    <div
+                        class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                            class="h-[2.5rem]"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                fill="rgb(30 58 138)"
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"
+                            />
+                        </svg>
+                        <span
+                            class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                            >Para você</span
+                        >
+                    </div>
+                    <a href="../src/static/pages/templates/license.html">
+                        <div
+                            class="header-tabs searchBtn group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem] fill-blue-900"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16H224v80c0 17.7 14.3 32 32 32h80V448c0 8.8-7.2 16-16 16H64zM64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3L274.7 18.7C262.7 6.7 246.5 0 229.5 0H64zm56 256c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24H264c13.3 0 24-10.7 24-24s-10.7-24-24-24H120z"
+                                />
+                            </svg>
+                            <span
+                                class="search_btn mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Licença</span
+                            >
+                        </div>
+                    </a>
+                    <a href="../src/static/pages/templates/saved.html">
+                        <div
+                            class="header-tabs group relative mx-4 flex flex-col flex-wrap justify-center hover:cursor-pointer"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 384 512"
+                                class="h-[2.5rem]"
+                            >
+                                <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="rgb(30 58 138)"
+                                    d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"
+                                />
+                            </svg>
+                            <span
+                                class="mt-2 flex items-center justify-center text-[1.4rem] text-blue-950 after:absolute after:bottom-0 after:h-[4px] after:w-full after:rounded-3xl after:bg-blue-900 after:opacity-0 after:transition-all after:duration-300 hover:cursor-pointer group-hover:after:-bottom-3 group-hover:after:opacity-100"
+                                >Salvos</span
+                            >
+                        </div>
+                    </a>
+                    <div
+                        class="user flex h-[6rem] w-[6rem] items-center justify-center rounded-full bg-blue-900"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[3rem]"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                fill="#ffffff"
+                                d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="w-full max-w-[1920px] px-10 pt-headerSize lg:px-0">
+            <div class="w-full lg:px-[14rem]">
+                <div class="my-10">
+                    <em
+                        class="h-fit text-[4.5rem] font-light leading-10 text-blue-950 sm:w-full"
+                    >
+                        Grandes
+                        <em
+                            class="inline h-fit text-[4.5rem] font-normal text-red-500"
+                            >Areas</em
+                        >
+                    </em>
+                </div>
+                <div class="areas grid grid-cols-1 gap-20 sm:grid-cols-3">
+                    <div
+                        class="flex flex-wrap items-center justify-center overflow-hidden rounded-3xl p-[8rem] pb-0 sm:p-0 xl:p-[3rem]"
+                    >
+                        <div>
+                            <img
+                                src="../../img/areas/cardiologia.png"
+                                alt=""
+                                class=""
+                            />
+                        </div>
+                        <h1 class="mt-9 text-[3rem] text-slate-900">
+                            Cardiologia
+                        </h1>
+                    </div>
+                    <div
+                        class="flex flex-wrap items-center justify-center overflow-hidden rounded-3xl p-[8rem] pb-0 sm:p-0 xl:p-[3rem]"
+                    >
+                        <div>
+                            <img
+                                src="../../img/areas/oftalmologia.png"
+                                alt=""
+                                class=""
+                            />
+                        </div>
+                        <h1 class="mt-9 text-[3rem] text-slate-900">
+                            Oftalmologia
+                        </h1>
+                    </div>
+                    <div
+                        class="flex flex-wrap items-center justify-center overflow-hidden rounded-3xl p-[8rem] pb-0 sm:p-0 xl:p-[3rem]"
+                    >
+                        <div>
+                            <img src="../../img/areas/neurologia.png" alt="" />
+                        </div>
+                        <h1 class="mt-9 text-[3rem] text-slate-900">
+                            Neurologia
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="../../js/utils/headerBar.js"></script>
+        <script src="../../js/components/areas.js"></script>
+    </body>
+</html>

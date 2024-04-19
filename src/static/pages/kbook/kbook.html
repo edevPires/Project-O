@@ -103,10 +103,10 @@
                 >
                     <button
                         id="books"
-                        class="my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
+                        class="sidebar-btn my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
                     >
                         <i
-                            class="fa-solid fa-book fa-2x mx-8 h-fit w-[2.8rem] text-slate-700"
+                            class="fa-solid fa-book fa-2x mx-8 h-fit w-[2.8rem] text-cyan-700"
                         ></i>
                         <div class="mobile-view hidden flex-grow sm:flex">
                             <span
@@ -121,13 +121,35 @@
                             </div>
                         </div>
                     </button>
-                    <ul id="books-list"></ul>
+                    <ul
+                        id="books-list"
+                        class="lib-list max-h-0 overflow-hidden transition-all"
+                    >
+                        <div
+                            class="m-4 flex items-center rounded-xl px-16 py-6 transition-colors hover:cursor-pointer hover:bg-blue-100"
+                        >
+                            <p
+                                class="ml-16 text-2xl font-semibold text-slate-800"
+                            >
+                                Item 1
+                            </p>
+                        </div>
+                        <div
+                            class="m-4 flex items-center rounded-xl px-16 py-6 transition-colors hover:cursor-pointer hover:bg-blue-100"
+                        >
+                            <p
+                                class="ml-16 text-2xl font-semibold text-slate-800"
+                            >
+                                Item 1
+                            </p>
+                        </div>
+                    </ul>
                     <button
                         id="articles"
-                        class="my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
+                        class="sidebar-btn my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
                     >
                         <i
-                            class="fa-solid fa-newspaper fa-2x mx-8 h-fit w-[2.8rem] text-slate-700"
+                            class="fa-solid fa-newspaper fa-2x mx-8 h-fit w-[2.8rem] text-cyan-700"
                         ></i>
                         <div class="mobile-view hidden flex-grow sm:flex">
                             <span
@@ -142,13 +164,35 @@
                             </div>
                         </div>
                     </button>
-                    <ul id="articles-list"></ul>
+                    <ul
+                        id="articles-list"
+                        class="lib-list max-h-0 overflow-hidden transition-all"
+                    >
+                        <div
+                            class="m-4 flex items-center rounded-xl px-16 py-6 transition-colors hover:cursor-pointer hover:bg-blue-100"
+                        >
+                            <p
+                                class="ml-16 text-2xl font-semibold text-slate-800"
+                            >
+                                Item 1
+                            </p>
+                        </div>
+                        <div
+                            class="m-4 flex items-center rounded-xl px-16 py-6 transition-colors hover:cursor-pointer hover:bg-blue-100"
+                        >
+                            <p
+                                class="ml-16 text-2xl font-semibold text-slate-800"
+                            >
+                                Item 1
+                            </p>
+                        </div>
+                    </ul>
                     <button
                         id="periodics"
-                        class="my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
+                        class="sidebar-btn my-8 flex items-center justify-center overflow-hidden sm:my-5 sm:justify-normal"
                     >
                         <i
-                            class="fa-solid fa-stethoscope fa-2x mx-8 h-fit w-[2.8rem] text-slate-700"
+                            class="fa-solid fa-stethoscope fa-2x mx-8 h-fit w-[2.8rem] text-cyan-700"
                         ></i>
                         <div class="mobile-view hidden flex-grow sm:flex">
                             <span
@@ -163,7 +207,29 @@
                             </div>
                         </div>
                     </button>
-                    <ul id="periodics_list"></ul>
+                    <ul
+                        id="periodics-list"
+                        class="lib-list max-h-0 overflow-hidden transition-all"
+                    >
+                        <div
+                            class="m-4 flex items-center rounded-xl px-16 py-6 transition-colors hover:cursor-pointer hover:bg-blue-100"
+                        >
+                            <p
+                                class="ml-16 text-2xl font-semibold text-slate-800"
+                            >
+                                Item 1
+                            </p>
+                        </div>
+                        <div
+                            class="m-4 flex items-center rounded-xl px-16 py-6 transition-colors hover:cursor-pointer hover:bg-blue-100"
+                        >
+                            <p
+                                class="ml-16 text-2xl font-semibold text-slate-800"
+                            >
+                                Item 1
+                            </p>
+                        </div>
+                    </ul>
                 </div>
                 <main class="flex-grow overflow-y-auto px-5" id="8KA-Library">
                     <embed
@@ -173,7 +239,7 @@
                     />
 
                     <div
-                        class="row-auto grid h-full w-full auto-rows-min grid-cols-2 gap-0 pl-[6rem] sm:pl-0 md:grid-cols-3 lg:grid-cols-4"
+                        class="row-auto grid h-full w-full auto-rows-min grid-cols-2 gap-0 pl-[6rem] sm:pl-0 md:grid-cols-4 lg:grid-cols-5"
                     >
                         <div
                             class="book group h-fit px-8 py-4 transition-transform hover:scale-105 hover:cursor-pointer lg:px-16 lg:py-8"
@@ -196,11 +262,75 @@
                                 </h2>
                             </div>
                         </div>
+                        <div
+                            class="book group h-fit px-8 py-4 transition-transform hover:scale-105 hover:cursor-pointer lg:px-16 lg:py-8"
+                        >
+                            <img
+                                src="../../img/8KALibrary/covers/Cinesiologia_capa.jpg"
+                                alt=""
+                                class="shadow-md shadow-slate-400 transition-shadow group-hover:shadow-lg"
+                            />
+                            <div>
+                                <h1
+                                    class="book-title line-clamp-1 text-ellipsis text-2xl font-bold leading-loose"
+                                >
+                                    Cinesiologia
+                                </h1>
+                                <h2
+                                    class="book-author line-clamp-1 text-ellipsis text-xl font-semibold leading-snug text-slate-500"
+                                >
+                                    Joana Paula Portela
+                                </h2>
+                            </div>
+                        </div>
+                        <div
+                            class="book group h-fit px-8 py-4 transition-transform hover:scale-105 hover:cursor-pointer lg:px-16 lg:py-8"
+                        >
+                            <img
+                                src="../../img/8KALibrary/covers/Embriologia_Humana_capa_page.jpg"
+                                alt=""
+                                class="shadow-md shadow-slate-400 transition-shadow group-hover:shadow-lg"
+                            />
+                            <div>
+                                <h1
+                                    class="book-title line-clamp-1 text-ellipsis text-2xl font-bold leading-loose"
+                                >
+                                    Embriologia Humana
+                                </h1>
+                                <h2
+                                    class="book-author line-clamp-1 text-ellipsis text-xl font-semibold leading-snug text-slate-500"
+                                >
+                                    Joana Paula Portela
+                                </h2>
+                            </div>
+                        </div>
+                        <div
+                            class="book group h-fit px-8 py-4 transition-transform hover:scale-105 hover:cursor-pointer lg:px-16 lg:py-8"
+                        >
+                            <img
+                                src="../../img/8KALibrary/covers/Uma_Introducao_a_Medicina_capa.jpg"
+                                alt=""
+                                class="shadow-md shadow-slate-400 transition-shadow group-hover:shadow-lg"
+                            />
+                            <div>
+                                <h1
+                                    class="book-title line-clamp-1 text-ellipsis text-2xl font-bold leading-loose"
+                                >
+                                    Uma Introdução à Medicina
+                                </h1>
+                                <h2
+                                    class="book-author line-clamp-1 text-ellipsis text-xl font-semibold leading-snug text-slate-500"
+                                >
+                                    Joana Paula Portela
+                                </h2>
+                            </div>
+                        </div>
                     </div>
                 </main>
             </section>
         </section>
         <script src="../../js/modules/library.js"></script>
+        <script src="../../js/utils/8KA/libAccordion.js"></script>
         <script src="../../js/utils/8KA/libPDFLoader.js"></script>
         <script src="../../js/components/8KA/libEngine.js"></script>
     </body>

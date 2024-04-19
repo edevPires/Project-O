@@ -18,3 +18,10 @@ document.addEventListener('keydown', (event) => {
         PDFViewerHandler()
     }
 })
+
+const sidebarBtns = document.querySelectorAll('.sidebar-btn')
+sidebarBtns.forEach((element) => {
+    element.addEventListener('click', () => {
+        sidebarAccordion(element)
+    })
+})
