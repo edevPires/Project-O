@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="../../../output.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../fonts/poppins/style.css" />
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div
+            class="carouselSlider fixed left-0 top-0 z-30 flex h-dvh w-dvw flex-col"
+        >
+            <!-- Slider main container -->
+            <div class="caroulseBody relative flex size-full flex-col">
+                <div class="swiper w-full flex-grow">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+
+                        <div class="swiper-slide relative flex flex-col">
+                            <div
+                                class="carouselHeader poppins-medium absolute top-0 flex w-full items-center justify-center rounded-bl-2xl rounded-br-2xl bg-opacity-50 bg-gradient-to-b from-black p-2 text-[3rem] text-white"
+                            >
+                                <h1>condicao</h1>
+                            </div>
+                            <iframe
+                                src="https://sketchfab.com/models/72784642f339431fab1c61c2cf88baba/embed?autostart=1&internal=1&tracking=0&ui_ar=0&ui_infos=0&ui_snapshots=1&ui_stop=0&ui_theatre=1&ui_watermark=0"
+                                frameborder="0"
+                                class="h-full w-full"
+                            ></iframe>
+                            <!-- absolute bottom-0 -->
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev text-slate-500"></div>
+                    <div class="swiper-button-next text-slate-500"></div>
+                </div>
+                <div class="info z-30 w-full bg-white px-10">
+                    <div
+                        class="infoHeader poppins-regular poppins-thin flex items-center justify-between py-4"
+                    >
+                        <span class="text-[3rem] text-blue-800">
+                            Información
+                        </span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                            class="h-[2.5rem] transform fill-blue-800 transition-all duration-300"
+                        >
+                            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path
+                                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                            />
+                        </svg>
+                    </div>
+                    <!-- add py-6 -->
+                    <!-- remove max-h-0 -->
+                    <div
+                        class="infoBody max-h-0 text-[1.5rem] transition-all duration-150"
+                    >
+                        <hr />
+                        info
+                    </div>
+                </div>
+                <div class="absolute top-0 -z-50 size-10 bg-red-50">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 320 512"
+                        class="h-[2rem]"
+                    >
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            fill="rgb(255,255,255)"
+                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <script>
+            const infoHeader = document.querySelectorAll('.infoHeader')
+            infoHeader.forEach((element) => {
+                element.addEventListener('click', () => {
+                    var headerSibling = element.nextElementSibling
+                    var headerParent = element.parentElement
+                    var headerSVG = element.querySelector('svg')
+                    headerSVG.classList.toggle('rotate-180')
+                    console.log(headerParent)
+                    headerParent.classList.toggle('absolute')
+                    headerParent.classList.toggle('bottom-0')
+                    headerSibling.classList.toggle('max-h-0')
+                    headerSibling.classList.toggle('max-h-[80dvh]')
+                })
+            })
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            })
+        </script>
+    </body>
+</html>
